@@ -1,11 +1,10 @@
 from PORIS import *
 
-class tvPORIS:
+class tvPORIS(PORISSys):
     def __init__(self):
+        super(tvPORIS, self).__init__("TV")
         idcounter = 1
-        self.sysTV = PORISSys("TV")
         self.mdTVMode_UNKNOWN = PORISMode("TVMode_UNKNOWN")
-        self.root = self.sysTV
         self.sysEntrada = PORISSys("Entrada")
         self.mdEntradaMode_UNKNOWN = PORISMode("EntradaMode_UNKNOWN")
         self.prAudio = PORISParam("Audio")
@@ -41,22 +40,22 @@ class tvPORIS:
         self.mdEntradaMode_Engineering = PORISMode("EntradaMode_Engineering")
         self.mdAntenaMode_Engineering = PORISMode("AntenaMode_Engineering")
 
-        self.sysTV.id = idcounter
+        self.id = idcounter
         idcounter += 1
-        self.sysTV.ident = "TV"
-        self.sysTV.description = ""
+        self.ident = "TV"
+        self.description = ""
 
         self.mdTVMode_UNKNOWN.id = idcounter
         idcounter += 1
         self.mdTVMode_UNKNOWN.ident = "TVMode_UNKNOWN"
         self.mdTVMode_UNKNOWN.description = ""
-        self.sysTV.addMode(self.mdTVMode_UNKNOWN)
+        self.addMode(self.mdTVMode_UNKNOWN)
 
         self.sysEntrada.id = idcounter
         idcounter += 1
         self.sysEntrada.ident = "Entrada"
         self.sysEntrada.description = ""
-        self.sysTV.addSubsystem(self.sysEntrada)
+        self.addSubsystem(self.sysEntrada)
 
         self.mdEntradaMode_UNKNOWN.id = idcounter
         idcounter += 1
@@ -88,7 +87,7 @@ class tvPORIS:
         idcounter += 1
         self.sysAntena.ident = "Antena"
         self.sysAntena.description = ""
-        self.sysTV.addSubsystem(self.sysAntena)
+        self.addSubsystem(self.sysAntena)
 
         self.mdAntenaMode_UNKNOWN.id = idcounter
         idcounter += 1
@@ -140,13 +139,13 @@ class tvPORIS:
         idcounter += 1
         self.mdTVMode_Antena.ident = "TVMode_Antena"
         self.mdTVMode_Antena.description = ""
-        self.sysTV.addMode(self.mdTVMode_Antena)
+        self.addMode(self.mdTVMode_Antena)
 
         self.mdTVMode_AV.id = idcounter
         idcounter += 1
         self.mdTVMode_AV.ident = "TVMode_AV"
         self.mdTVMode_AV.description = ""
-        self.sysTV.addMode(self.mdTVMode_AV)
+        self.addMode(self.mdTVMode_AV)
 
         self.mdEntradaMode_HDMI1.id = idcounter
         idcounter += 1
@@ -254,7 +253,7 @@ class tvPORIS:
         idcounter += 1
         self.mdTVMode_Engineering.ident = "TVMode_Engineering"
         self.mdTVMode_Engineering.description = "TV engineering mode"
-        self.sysTV.addMode(self.mdTVMode_Engineering)
+        self.addMode(self.mdTVMode_Engineering)
 
         self.mdEntradaMode_Engineering.id = idcounter
         idcounter += 1
@@ -330,15 +329,6 @@ class tvPORIS:
     #  Specific methods
     #----------------------------------------------------------------------
 
-
-    ## TVMode 
-    def get_TVMode(self)-> PORISMode:
-        return self.sysTV.selectedMode
-
-    def set_TVMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysTV.setMode(mode)
-
-
     ## EntradaMode 
     def get_EntradaMode(self)-> PORISMode:
         return self.sysEntrada.selectedMode
@@ -389,16 +379,6 @@ class tvPORIS:
 
     def set_CanalMode(self, mode: PORISMode)-> PORISMode :
         return self.prCanal.setMode(mode)
-
-
-    ## prParam Antena 
-
-    # CanalDouble  
-    def get_CanalDouble(self)-> float :
-        return self.prCanal.selectedValue.getData()
-
-    def set_CanalDouble(self, data: float)-> float :
-        return self.prCanal.selectedValue.setData(data)
 
 
     ## prParam Antena 

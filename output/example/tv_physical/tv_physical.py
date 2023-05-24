@@ -10,6 +10,12 @@ class tv_physical(tvPORIS):
 
 thismodel = tv_physical()
 
-print("Let's test our model ",thismodel.root.name)
-print("Current mode is ",thismodel.root.selectedMode.name)
-
+print("Let's test our model ",thismodel.name)
+print("Current mode is ",thismodel.selectedMode.name)
+thismodel.setMode(thismodel.mdTVMode_Antena)
+print("Current mode is ",thismodel.selectedMode.name)
+print("Current Canal is",thismodel.get_CanalDouble())
+print("Current Canal Mode is",thismodel.get_CanalMode().name)
+thismodel.set_CanalDouble(16)
+print("Current Canal is",thismodel.get_CanalDouble())
+thismodel.set_CanalDouble(99)
