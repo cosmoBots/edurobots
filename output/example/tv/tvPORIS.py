@@ -28,10 +28,10 @@ class tvPORIS:
         self.vlAudio_Jack = PORISValue("Audio_Jack")
         self.vlAudio_RCA = PORISValue("Audio_RCA")
         self.mdAudioMode_Mode = PORISMode("AudioMode_Mode")
-        self.vlCanal_Rango_Analogico = PORISValueFloat("Canal_Rango_Analogico")
+        self.vlCanal_Rango_Analogico = PORISValueFloat("Canal_Rango_Analogico",1,1,16)
         self.mdCanalMode_Digital = PORISMode("CanalMode_Digital")
         self.mdCanalMode_Analogico = PORISMode("CanalMode_Analogico")
-        self.vlCanal_Rango_Digital = PORISValueFloat("Canal_Rango_Digital")
+        self.vlCanal_Rango_Digital = PORISValueFloat("Canal_Rango_Digital",1,1,999)
         self.vlBanda_UHF = PORISValue("Banda_UHF")
         self.vlBanda_VHF = PORISValue("Banda_VHF")
         self.mdBandaMode_Analogico = PORISMode("BandaMode_Analogico")
@@ -194,9 +194,6 @@ class tvPORIS:
         idcounter += 1
         self.vlCanal_Rango_Analogico.ident = "Canal_Rango_Analogico"
         self.vlCanal_Rango_Analogico.description = ""
-        self.vlCanal_Rango_Analogico.min = 1
-        self.vlCanal_Rango_Analogico.default_data = 1
-        self.vlCanal_Rango_Analogico.max = 16
         self.prCanal.addValue(self.vlCanal_Rango_Analogico)
 
         self.mdCanalMode_Digital.id = idcounter
@@ -215,9 +212,6 @@ class tvPORIS:
         idcounter += 1
         self.vlCanal_Rango_Digital.ident = "Canal_Rango_Digital"
         self.vlCanal_Rango_Digital.description = ""
-        self.vlCanal_Rango_Digital.min = 1
-        self.vlCanal_Rango_Digital.default_data = 1
-        self.vlCanal_Rango_Digital.max = 999
         self.prCanal.addValue(self.vlCanal_Rango_Digital)
 
         self.vlBanda_UHF.id = idcounter
@@ -333,25 +327,25 @@ class tvPORIS:
 
     ## TVMode 
     def get_TVMode(self)-> PORISMode:
-        return self.sysTV.selectedMode
+        return self.sysTV.getSelectedMode()
 
     def set_TVMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysTV.setMode(mode)
+        return self.sysTV.selectMode(mode)
 
 
     ## EntradaMode 
     def get_EntradaMode(self)-> PORISMode:
-        return self.sysEntrada.selectedMode
+        return self.sysEntrada.getSelectedMode()
 
     def set_EntradaMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysEntrada.setMode(mode)
+        return self.sysEntrada.selectMode(mode)
 
 
     ## prParam Audio 
 
     # Audio
     def get_Audio(self)-> PORISValue :
-        return self.prAudio.selectedValue
+        return self.prAudio.getSelectedValue()
 
     def set_Audio(self, value: PORISValue)-> PORISValue :
         return self.prAudio.setValue(value)
@@ -359,25 +353,25 @@ class tvPORIS:
 
     ## AudioMode 
     def get_AudioMode(self)-> PORISMode:
-        return self.prAudio.selectedMode
+        return self.prAudio.getSelectedMode()
 
     def set_AudioMode(self, mode: PORISMode)-> PORISMode :
-        return self.prAudio.setMode(mode)
+        return self.prAudio.selectMode(mode)
 
 
     ## AntenaMode 
     def get_AntenaMode(self)-> PORISMode:
-        return self.sysAntena.selectedMode
+        return self.sysAntena.getSelectedMode()
 
     def set_AntenaMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysAntena.setMode(mode)
+        return self.sysAntena.selectMode(mode)
 
 
     ## prParam Canal 
 
     # Canal
     def get_Canal(self)-> PORISValue :
-        return self.prCanal.selectedValue
+        return self.prCanal.getSelectedValue()
 
     def set_Canal(self, value: PORISValue)-> PORISValue :
         return self.prCanal.setValue(value)
@@ -385,37 +379,41 @@ class tvPORIS:
 
     ## CanalMode 
     def get_CanalMode(self)-> PORISMode:
-        return self.prCanal.selectedMode
+        return self.prCanal.getSelectedMode()
 
     def set_CanalMode(self, mode: PORISMode)-> PORISMode :
-        return self.prCanal.setMode(mode)
+        return self.prCanal.selectMode(mode)
 
 
     ## prParam Antena 
 
     # CanalDouble  
     def get_CanalDouble(self)-> float :
-        return self.prCanal.selectedValue.getData()
+        v = self.prCanal.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_CanalDouble(self, data: float)-> float :
-        return self.prCanal.selectedValue.setData(data)
+        return self.prCanal.getSelectedValue().setData(data)
 
 
     ## prParam Antena 
 
     # CanalDouble  
     def get_CanalDouble(self)-> float :
-        return self.prCanal.selectedValue.getData()
+        v = self.prCanal.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_CanalDouble(self, data: float)-> float :
-        return self.prCanal.selectedValue.setData(data)
+        return self.prCanal.getSelectedValue().setData(data)
 
 
     ## prParam Banda 
 
     # Banda
     def get_Banda(self)-> PORISValue :
-        return self.prBanda.selectedValue
+        return self.prBanda.getSelectedValue()
 
     def set_Banda(self, value: PORISValue)-> PORISValue :
         return self.prBanda.setValue(value)
@@ -423,10 +421,10 @@ class tvPORIS:
 
     ## BandaMode 
     def get_BandaMode(self)-> PORISMode:
-        return self.prBanda.selectedMode
+        return self.prBanda.getSelectedMode()
 
     def set_BandaMode(self, mode: PORISMode)-> PORISMode :
-        return self.prBanda.setMode(mode)
+        return self.prBanda.selectMode(mode)
 
 
     ## Action trigger TV_Apply ##
