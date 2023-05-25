@@ -47,10 +47,10 @@ class example_evolvedPORIS:
         self.vlDispersion_R1000 = PORISValue("Dispersion_R1000")
         self.vlDispersion_R2000 = PORISValue("Dispersion_R2000")
         self.mdDispersionMode_Normal = PORISMode("DispersionMode_Normal")
-        self.vlexpTime_NormalRange = PORISValueFloat("expTime_NormalRange")
+        self.vlexpTime_NormalRange = PORISValueFloat("expTime_NormalRange",0,1,3600)
         self.mdexpTimeMode_Normal = PORISMode("expTimeMode_Normal")
         self.mdexpTimeMode_Fast = PORISMode("expTimeMode_Fast")
-        self.vlexpTime_FastRange = PORISValueFloat("expTime_FastRange")
+        self.vlexpTime_FastRange = PORISValueFloat("expTime_FastRange",0,0.01,0.5)
         self.vlBinning_1x1 = PORISValue("Binning_1x1")
         self.vlBinning_2x1 = PORISValue("Binning_2x1")
         self.vlBinning_1x2 = PORISValue("Binning_1x2")
@@ -72,7 +72,7 @@ class example_evolvedPORIS:
         self.mdClassicFiltersMode_Standard = PORISMode("ClassicFiltersMode_Standard")
         self.mdClassicFiltersMode_Blue = PORISMode("ClassicFiltersMode_Blue")
         self.mdClassicFiltersMode_Red = PORISMode("ClassicFiltersMode_Red")
-        self.vlClassicFilters_userFilter = PORISValueText("ClassicFilters_userFilter")
+        self.vlClassicFilters_userFilter = PORISValueString("ClassicFilters_userFilter",'mycustomfilter')
         self.mdClassicFiltersMode_User = PORISMode("ClassicFiltersMode_User")
         self.mdInstrumentMode_LSSlit = PORISMode("InstrumentMode_LSSlit")
         self.mdSlicerMode_Disabled = PORISMode("SlicerMode_Disabled")
@@ -366,9 +366,6 @@ class example_evolvedPORIS:
         idcounter += 1
         self.vlexpTime_NormalRange.ident = "expTime_NormalRange"
         self.vlexpTime_NormalRange.description = ""
-        self.vlexpTime_NormalRange.min = 0
-        self.vlexpTime_NormalRange.default_data = 1
-        self.vlexpTime_NormalRange.max = 3600
         self.prexpTime.addValue(self.vlexpTime_NormalRange)
 
         self.mdexpTimeMode_Normal.id = idcounter
@@ -387,9 +384,6 @@ class example_evolvedPORIS:
         idcounter += 1
         self.vlexpTime_FastRange.ident = "expTime_FastRange"
         self.vlexpTime_FastRange.description = ""
-        self.vlexpTime_FastRange.min = 0
-        self.vlexpTime_FastRange.default_data = 0.01
-        self.vlexpTime_FastRange.max = 0.5
         self.prexpTime.addValue(self.vlexpTime_FastRange)
 
         self.vlBinning_1x1.id = idcounter
@@ -857,33 +851,33 @@ class example_evolvedPORIS:
 
     ## EngineerMode 
     def get_EngineerMode(self)-> PORISMode:
-        return self.sysEngineer.selectedMode
+        return self.sysEngineer.getSelectedMode()
 
     def set_EngineerMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysEngineer.setMode(mode)
+        return self.sysEngineer.selectMode(mode)
 
 
     ## OperatorMode 
     def get_OperatorMode(self)-> PORISMode:
-        return self.sysOperator.selectedMode
+        return self.sysOperator.getSelectedMode()
 
     def set_OperatorMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysOperator.setMode(mode)
+        return self.sysOperator.selectMode(mode)
 
 
     ## InstrumentMode 
     def get_InstrumentMode(self)-> PORISMode:
-        return self.sysInstrument.selectedMode
+        return self.sysInstrument.getSelectedMode()
 
     def set_InstrumentMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysInstrument.setMode(mode)
+        return self.sysInstrument.selectMode(mode)
 
 
     ## prParam Masks 
 
     # Masks
     def get_Masks(self)-> PORISValue :
-        return self.prMasks.selectedValue
+        return self.prMasks.getSelectedValue()
 
     def set_Masks(self, value: PORISValue)-> PORISValue :
         return self.prMasks.setValue(value)
@@ -891,17 +885,17 @@ class example_evolvedPORIS:
 
     ## MasksMode 
     def get_MasksMode(self)-> PORISMode:
-        return self.prMasks.selectedMode
+        return self.prMasks.getSelectedMode()
 
     def set_MasksMode(self, mode: PORISMode)-> PORISMode :
-        return self.prMasks.setMode(mode)
+        return self.prMasks.selectMode(mode)
 
 
     ## prParam Dispersion 
 
     # Dispersion
     def get_Dispersion(self)-> PORISValue :
-        return self.prDispersion.selectedValue
+        return self.prDispersion.getSelectedValue()
 
     def set_Dispersion(self, value: PORISValue)-> PORISValue :
         return self.prDispersion.setValue(value)
@@ -909,25 +903,25 @@ class example_evolvedPORIS:
 
     ## DispersionMode 
     def get_DispersionMode(self)-> PORISMode:
-        return self.prDispersion.selectedMode
+        return self.prDispersion.getSelectedMode()
 
     def set_DispersionMode(self, mode: PORISMode)-> PORISMode :
-        return self.prDispersion.setMode(mode)
+        return self.prDispersion.selectMode(mode)
 
 
     ## DetectorMode 
     def get_DetectorMode(self)-> PORISMode:
-        return self.sysDetector.selectedMode
+        return self.sysDetector.getSelectedMode()
 
     def set_DetectorMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysDetector.setMode(mode)
+        return self.sysDetector.selectMode(mode)
 
 
     ## prParam expTime 
 
     # expTime
     def get_expTime(self)-> PORISValue :
-        return self.prexpTime.selectedValue
+        return self.prexpTime.getSelectedValue()
 
     def set_expTime(self, value: PORISValue)-> PORISValue :
         return self.prexpTime.setValue(value)
@@ -935,37 +929,41 @@ class example_evolvedPORIS:
 
     ## expTimeMode 
     def get_expTimeMode(self)-> PORISMode:
-        return self.prexpTime.selectedMode
+        return self.prexpTime.getSelectedMode()
 
     def set_expTimeMode(self, mode: PORISMode)-> PORISMode :
-        return self.prexpTime.setMode(mode)
+        return self.prexpTime.selectMode(mode)
 
 
     ## prParam Detector 
 
     # expTimeDouble  
     def get_expTimeDouble(self)-> float :
-        return self.prexpTime.selectedValue.getData()
+        v = self.prexpTime.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_expTimeDouble(self, data: float)-> float :
-        return self.prexpTime.selectedValue.setData(data)
+        return self.prexpTime.getSelectedValue().setData(data)
 
 
     ## prParam Detector 
 
     # expTimeDouble  
     def get_expTimeDouble(self)-> float :
-        return self.prexpTime.selectedValue.getData()
+        v = self.prexpTime.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_expTimeDouble(self, data: float)-> float :
-        return self.prexpTime.selectedValue.setData(data)
+        return self.prexpTime.getSelectedValue().setData(data)
 
 
     ## prParam Binning 
 
     # Binning
     def get_Binning(self)-> PORISValue :
-        return self.prBinning.selectedValue
+        return self.prBinning.getSelectedValue()
 
     def set_Binning(self, value: PORISValue)-> PORISValue :
         return self.prBinning.setValue(value)
@@ -973,25 +971,25 @@ class example_evolvedPORIS:
 
     ## BinningMode 
     def get_BinningMode(self)-> PORISMode:
-        return self.prBinning.selectedMode
+        return self.prBinning.getSelectedMode()
 
     def set_BinningMode(self, mode: PORISMode)-> PORISMode :
-        return self.prBinning.setMode(mode)
+        return self.prBinning.selectMode(mode)
 
 
     ## FilterMode 
     def get_FilterMode(self)-> PORISMode:
-        return self.sysFilter.selectedMode
+        return self.sysFilter.getSelectedMode()
 
     def set_FilterMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysFilter.setMode(mode)
+        return self.sysFilter.selectMode(mode)
 
 
     ## prParam ClassicFilters 
 
     # ClassicFilters
     def get_ClassicFilters(self)-> PORISValue :
-        return self.prClassicFilters.selectedValue
+        return self.prClassicFilters.getSelectedValue()
 
     def set_ClassicFilters(self, value: PORISValue)-> PORISValue :
         return self.prClassicFilters.setValue(value)
@@ -999,35 +997,37 @@ class example_evolvedPORIS:
 
     ## ClassicFiltersMode 
     def get_ClassicFiltersMode(self)-> PORISMode:
-        return self.prClassicFilters.selectedMode
+        return self.prClassicFilters.getSelectedMode()
 
     def set_ClassicFiltersMode(self, mode: PORISMode)-> PORISMode :
-        return self.prClassicFilters.setMode(mode)
+        return self.prClassicFilters.selectMode(mode)
 
 
     ## prParam Filter 
 
     # ClassicFiltersString #
     def get_ClassicFiltersString(self)-> str :
-        return self.prClassicFilters.selectedValue.getData()
+        v = self.prClassicFilters.getSelectedValue()
+        v.__class__ = PORISValueString
+        return v.getData()
 
     def set_ClassicFiltersString(self, data: str)-> str :
-        return self.prClassicFilters.selectedValue.setData(data)
+        return self.prClassicFilters.getSelectedValue().setData(data)
 
 
     ## SlicerMode 
     def get_SlicerMode(self)-> PORISMode:
-        return self.sysSlicer.selectedMode
+        return self.sysSlicer.getSelectedMode()
 
     def set_SlicerMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysSlicer.setMode(mode)
+        return self.sysSlicer.selectMode(mode)
 
 
     ## prParam Doblador 
 
     # Doblador
     def get_Doblador(self)-> PORISValue :
-        return self.prDoblador.selectedValue
+        return self.prDoblador.getSelectedValue()
 
     def set_Doblador(self, value: PORISValue)-> PORISValue :
         return self.prDoblador.setValue(value)
@@ -1035,8 +1035,8 @@ class example_evolvedPORIS:
 
     ## DobladorMode 
     def get_DobladorMode(self)-> PORISMode:
-        return self.prDoblador.selectedMode
+        return self.prDoblador.getSelectedMode()
 
     def set_DobladorMode(self, mode: PORISMode)-> PORISMode :
-        return self.prDoblador.setMode(mode)
+        return self.prDoblador.selectMode(mode)
 

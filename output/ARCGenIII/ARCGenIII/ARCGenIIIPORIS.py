@@ -72,36 +72,36 @@ class ARCGenIIIPORIS:
         self.mdAcquisitionMode_Normal = PORISMode("AcquisitionMode_Normal")
         self.mdAcquisitionMode_FrameTransfer = PORISMode("AcquisitionMode_FrameTransfer")
         self.mdAcquisitionMode_Shuffling = PORISMode("AcquisitionMode_Shuffling")
-        self.vlShuffleLines_Full_Range = PORISValueFloat("ShuffleLines_Full_Range")
+        self.vlShuffleLines_Full_Range = PORISValueFloat("ShuffleLines_Full_Range",0,200,1000)
         self.mdShuffleLinesMode_Normal = PORISMode("ShuffleLinesMode_Normal")
-        self.vlShiftNumber_Full_Range = PORISValueFloat("ShiftNumber_Full_Range")
+        self.vlShiftNumber_Full_Range = PORISValueFloat("ShiftNumber_Full_Range",0,5,1000)
         self.mdShiftNumberMode_Normal = PORISMode("ShiftNumberMode_Normal")
         self.mdSubarrayFeatureMode_Off = PORISMode("SubarrayFeatureMode_Off")
         self.mdSubarrayFeatureMode_On = PORISMode("SubarrayFeatureMode_On")
         self.mdColsMode_Normal = PORISMode("ColsMode_Normal")
-        self.vlCols_Full_Range = PORISValueFloat("Cols_Full_Range")
+        self.vlCols_Full_Range = PORISValueFloat("Cols_Full_Range",0,2048,4098)
         self.mdoffsetRowMode_Normal = PORISMode("offsetRowMode_Normal")
-        self.vloffsetRow_Full_Range = PORISValueFloat("offsetRow_Full_Range")
+        self.vloffsetRow_Full_Range = PORISValueFloat("offsetRow_Full_Range",0,2048,4098)
         self.mdRowsMode_Normal = PORISMode("RowsMode_Normal")
-        self.vlRows_Full_Range = PORISValueFloat("Rows_Full_Range")
+        self.vlRows_Full_Range = PORISValueFloat("Rows_Full_Range",0,2048,4098)
         self.mdoffsetColMode_Normal = PORISMode("offsetColMode_Normal")
-        self.vloffsetCol_Full_Range = PORISValueFloat("offsetCol_Full_Range")
+        self.vloffsetCol_Full_Range = PORISValueFloat("offsetCol_Full_Range",0,2048,4098)
         self.mdOpenShutterMode_On = PORISMode("OpenShutterMode_On")
         self.mdOpenShutterMode_Off = PORISMode("OpenShutterMode_Off")
-        self.vlExpTime_Full_Range = PORISValueFloat("ExpTime_Full_Range")
+        self.vlExpTime_Full_Range = PORISValueFloat("ExpTime_Full_Range",0,1,4294967.295)
         self.mdExpTimeMode_Normal = PORISMode("ExpTimeMode_Normal")
         self.mdExpTimeMode_FT = PORISMode("ExpTimeMode_FT")
-        self.vlExpTime_FT_Range = PORISValueFloat("ExpTime_FT_Range")
+        self.vlExpTime_FT_Range = PORISValueFloat("ExpTime_FT_Range",0,0,360)
         self.mdPixelSpeedMode_SLW = PORISMode("PixelSpeedMode_SLW")
         self.mdPixelSpeedMode_MED = PORISMode("PixelSpeedMode_MED")
         self.mdPixelSpeedMode_FST = PORISMode("PixelSpeedMode_FST")
         self.mdExposureCtrlMode_Normal = PORISMode("ExposureCtrlMode_Normal")
         self.mdExposureCtrlMode_FT = PORISMode("ExposureCtrlMode_FT")
         self.mdnumOfFramesMode_Multiple = PORISMode("numOfFramesMode_Multiple")
-        self.vlnumOfFrames_Multiple_Range = PORISValueFloat("numOfFrames_Multiple_Range")
+        self.vlnumOfFrames_Multiple_Range = PORISValueFloat("numOfFrames_Multiple_Range",2,10,4294967295)
         self.mdnumOfFramesMode_Single = PORISMode("numOfFramesMode_Single")
         self.vlnumOfFrames_1 = PORISValue("numOfFrames_1")
-        self.vlCalibGain_Normal_Range = PORISValueFloat("CalibGain_Normal_Range")
+        self.vlCalibGain_Normal_Range = PORISValueFloat("CalibGain_Normal_Range",0,2,15)
         self.mdCalibGainMode_Normal = PORISMode("CalibGainMode_Normal")
         self.mdExposureCtrlMode_NoShutter = PORISMode("ExposureCtrlMode_NoShutter")
         self.mdExposureCtrlMode_Calibration = PORISMode("ExposureCtrlMode_Calibration")
@@ -119,11 +119,11 @@ class ARCGenIIIPORIS:
         self.mdRecompositionMode_CDSQuad = PORISMode("RecompositionMode_CDSQuad")
         self.mdRecompositionMode_HawaiiRG = PORISMode("RecompositionMode_HawaiiRG")
         self.mdAcquisitionMode_NormalWindow = PORISMode("AcquisitionMode_NormalWindow")
-        self.vluiRows_Full_Range = PORISValueFloat("uiRows_Full_Range")
+        self.vluiRows_Full_Range = PORISValueFloat("uiRows_Full_Range",0,4112,4112)
         self.mduiRowsMode_Normal = PORISMode("uiRowsMode_Normal")
-        self.vluiRows_FTRange = PORISValueFloat("uiRows_FTRange")
+        self.vluiRows_FTRange = PORISValueFloat("uiRows_FTRange",0,2056,2056)
         self.mduiRowsMode_Half = PORISMode("uiRowsMode_Half")
-        self.vluiCols_Full_Range = PORISValueFloat("uiCols_Full_Range")
+        self.vluiCols_Full_Range = PORISValueFloat("uiCols_Full_Range",0,4096,4096)
         self.mduiColsMode_Normal = PORISMode("uiColsMode_Normal")
         self.mdDimensionsMode_Normal = PORISMode("DimensionsMode_Normal")
         self.mdDimensionsMode_FT = PORISMode("DimensionsMode_FT")
@@ -580,9 +580,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlShuffleLines_Full_Range.ident = "ShuffleLines_Full_Range"
         self.vlShuffleLines_Full_Range.description = ""
-        self.vlShuffleLines_Full_Range.min = 0
-        self.vlShuffleLines_Full_Range.default_data = 200
-        self.vlShuffleLines_Full_Range.max = 1000
         self.prShuffleLines.addValue(self.vlShuffleLines_Full_Range)
 
         self.mdShuffleLinesMode_Normal.id = idcounter
@@ -595,9 +592,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlShiftNumber_Full_Range.ident = "ShiftNumber_Full_Range"
         self.vlShiftNumber_Full_Range.description = ""
-        self.vlShiftNumber_Full_Range.min = 0
-        self.vlShiftNumber_Full_Range.default_data = 5
-        self.vlShiftNumber_Full_Range.max = 1000
         self.prShiftNumber.addValue(self.vlShiftNumber_Full_Range)
 
         self.mdShiftNumberMode_Normal.id = idcounter
@@ -628,9 +622,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlCols_Full_Range.ident = "Cols_Full_Range"
         self.vlCols_Full_Range.description = ""
-        self.vlCols_Full_Range.min = 0
-        self.vlCols_Full_Range.default_data = 2048
-        self.vlCols_Full_Range.max = 4098
         self.prCols.addValue(self.vlCols_Full_Range)
 
         self.mdoffsetRowMode_Normal.id = idcounter
@@ -643,9 +634,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vloffsetRow_Full_Range.ident = "offsetRow_Full_Range"
         self.vloffsetRow_Full_Range.description = ""
-        self.vloffsetRow_Full_Range.min = 0
-        self.vloffsetRow_Full_Range.default_data = 2048
-        self.vloffsetRow_Full_Range.max = 4098
         self.proffsetRow.addValue(self.vloffsetRow_Full_Range)
 
         self.mdRowsMode_Normal.id = idcounter
@@ -658,9 +646,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlRows_Full_Range.ident = "Rows_Full_Range"
         self.vlRows_Full_Range.description = ""
-        self.vlRows_Full_Range.min = 0
-        self.vlRows_Full_Range.default_data = 2048
-        self.vlRows_Full_Range.max = 4098
         self.prRows.addValue(self.vlRows_Full_Range)
 
         self.mdoffsetColMode_Normal.id = idcounter
@@ -673,9 +658,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vloffsetCol_Full_Range.ident = "offsetCol_Full_Range"
         self.vloffsetCol_Full_Range.description = ""
-        self.vloffsetCol_Full_Range.min = 0
-        self.vloffsetCol_Full_Range.default_data = 2048
-        self.vloffsetCol_Full_Range.max = 4098
         self.proffsetCol.addValue(self.vloffsetCol_Full_Range)
 
         self.mdOpenShutterMode_On.id = idcounter
@@ -694,9 +676,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlExpTime_Full_Range.ident = "ExpTime_Full_Range"
         self.vlExpTime_Full_Range.description = ""
-        self.vlExpTime_Full_Range.min = 0
-        self.vlExpTime_Full_Range.default_data = 1
-        self.vlExpTime_Full_Range.max = 4294967.295
         self.prExpTime.addValue(self.vlExpTime_Full_Range)
 
         self.mdExpTimeMode_Normal.id = idcounter
@@ -715,9 +694,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlExpTime_FT_Range.ident = "ExpTime_FT_Range"
         self.vlExpTime_FT_Range.description = ""
-        self.vlExpTime_FT_Range.min = 0
-        self.vlExpTime_FT_Range.default_data = 0
-        self.vlExpTime_FT_Range.max = 360
         self.prExpTime.addValue(self.vlExpTime_FT_Range)
 
         self.mdPixelSpeedMode_SLW.id = idcounter
@@ -760,9 +736,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlnumOfFrames_Multiple_Range.ident = "numOfFrames_Multiple_Range"
         self.vlnumOfFrames_Multiple_Range.description = ""
-        self.vlnumOfFrames_Multiple_Range.min = 2
-        self.vlnumOfFrames_Multiple_Range.default_data = 10
-        self.vlnumOfFrames_Multiple_Range.max = 4294967295
         self.prnumOfFrames.addValue(self.vlnumOfFrames_Multiple_Range)
 
         self.mdnumOfFramesMode_Single.id = idcounter
@@ -781,9 +754,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vlCalibGain_Normal_Range.ident = "CalibGain_Normal_Range"
         self.vlCalibGain_Normal_Range.description = ""
-        self.vlCalibGain_Normal_Range.min = 0
-        self.vlCalibGain_Normal_Range.default_data = 2
-        self.vlCalibGain_Normal_Range.max = 15
         self.prCalibGain.addValue(self.vlCalibGain_Normal_Range)
 
         self.mdCalibGainMode_Normal.id = idcounter
@@ -892,9 +862,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vluiRows_Full_Range.ident = "uiRows_Full_Range"
         self.vluiRows_Full_Range.description = ""
-        self.vluiRows_Full_Range.min = 0
-        self.vluiRows_Full_Range.default_data = 4112
-        self.vluiRows_Full_Range.max = 4112
         self.pruiRows.addValue(self.vluiRows_Full_Range)
 
         self.mduiRowsMode_Normal.id = idcounter
@@ -907,9 +874,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vluiRows_FTRange.ident = "uiRows_FTRange"
         self.vluiRows_FTRange.description = ""
-        self.vluiRows_FTRange.min = 0
-        self.vluiRows_FTRange.default_data = 2056
-        self.vluiRows_FTRange.max = 2056
         self.pruiRows.addValue(self.vluiRows_FTRange)
 
         self.mduiRowsMode_Half.id = idcounter
@@ -922,9 +886,6 @@ class ARCGenIIIPORIS:
         idcounter += 1
         self.vluiCols_Full_Range.ident = "uiCols_Full_Range"
         self.vluiCols_Full_Range.description = ""
-        self.vluiCols_Full_Range.min = 0
-        self.vluiCols_Full_Range.default_data = 4096
-        self.vluiCols_Full_Range.max = 4096
         self.pruiCols.addValue(self.vluiCols_Full_Range)
 
         self.mduiColsMode_Normal.id = idcounter
@@ -1434,41 +1395,41 @@ class ARCGenIIIPORIS:
 
     ## ARCGenIIIMode 
     def get_ARCGenIIIMode(self)-> PORISMode:
-        return self.sysARCGenIII.selectedMode
+        return self.sysARCGenIII.getSelectedMode()
 
     def set_ARCGenIIIMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysARCGenIII.setMode(mode)
+        return self.sysARCGenIII.selectMode(mode)
 
 
     ## FirmwareMode 
     def get_FirmwareMode(self)-> PORISMode:
-        return self.sysFirmware.selectedMode
+        return self.sysFirmware.getSelectedMode()
 
     def set_FirmwareMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysFirmware.setMode(mode)
+        return self.sysFirmware.selectMode(mode)
 
 
     ## VariantsMode 
     def get_VariantsMode(self)-> PORISMode:
-        return self.sysVariants.selectedMode
+        return self.sysVariants.getSelectedMode()
 
     def set_VariantsMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysVariants.setMode(mode)
+        return self.sysVariants.selectMode(mode)
 
 
     ## AcquisitionMode 
     def get_AcquisitionMode(self)-> PORISMode:
-        return self.sysAcquisition.selectedMode
+        return self.sysAcquisition.getSelectedMode()
 
     def set_AcquisitionMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysAcquisition.setMode(mode)
+        return self.sysAcquisition.selectMode(mode)
 
 
     ## prParam ShuffleLines 
 
     # ShuffleLines
     def get_ShuffleLines(self)-> PORISValue :
-        return self.prShuffleLines.selectedValue
+        return self.prShuffleLines.getSelectedValue()
 
     def set_ShuffleLines(self, value: PORISValue)-> PORISValue :
         return self.prShuffleLines.setValue(value)
@@ -1476,27 +1437,29 @@ class ARCGenIIIPORIS:
 
     ## ShuffleLinesMode 
     def get_ShuffleLinesMode(self)-> PORISMode:
-        return self.prShuffleLines.selectedMode
+        return self.prShuffleLines.getSelectedMode()
 
     def set_ShuffleLinesMode(self, mode: PORISMode)-> PORISMode :
-        return self.prShuffleLines.setMode(mode)
+        return self.prShuffleLines.selectMode(mode)
 
 
     ## prParam Acquisition 
 
     # ShuffleLinesDouble  
     def get_ShuffleLinesDouble(self)-> float :
-        return self.prShuffleLines.selectedValue.getData()
+        v = self.prShuffleLines.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_ShuffleLinesDouble(self, data: float)-> float :
-        return self.prShuffleLines.selectedValue.setData(data)
+        return self.prShuffleLines.getSelectedValue().setData(data)
 
 
     ## prParam ShiftNumber 
 
     # ShiftNumber
     def get_ShiftNumber(self)-> PORISValue :
-        return self.prShiftNumber.selectedValue
+        return self.prShiftNumber.getSelectedValue()
 
     def set_ShiftNumber(self, value: PORISValue)-> PORISValue :
         return self.prShiftNumber.setValue(value)
@@ -1504,35 +1467,37 @@ class ARCGenIIIPORIS:
 
     ## ShiftNumberMode 
     def get_ShiftNumberMode(self)-> PORISMode:
-        return self.prShiftNumber.selectedMode
+        return self.prShiftNumber.getSelectedMode()
 
     def set_ShiftNumberMode(self, mode: PORISMode)-> PORISMode :
-        return self.prShiftNumber.setMode(mode)
+        return self.prShiftNumber.selectMode(mode)
 
 
     ## prParam Acquisition 
 
     # ShiftNumberDouble  
     def get_ShiftNumberDouble(self)-> float :
-        return self.prShiftNumber.selectedValue.getData()
+        v = self.prShiftNumber.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_ShiftNumberDouble(self, data: float)-> float :
-        return self.prShiftNumber.selectedValue.setData(data)
+        return self.prShiftNumber.getSelectedValue().setData(data)
 
 
     ## SubarrayFeatureMode 
     def get_SubarrayFeatureMode(self)-> PORISMode:
-        return self.sysSubarrayFeature.selectedMode
+        return self.sysSubarrayFeature.getSelectedMode()
 
     def set_SubarrayFeatureMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysSubarrayFeature.setMode(mode)
+        return self.sysSubarrayFeature.selectMode(mode)
 
 
     ## prParam Cols 
 
     # Cols
     def get_Cols(self)-> PORISValue :
-        return self.prCols.selectedValue
+        return self.prCols.getSelectedValue()
 
     def set_Cols(self, value: PORISValue)-> PORISValue :
         return self.prCols.setValue(value)
@@ -1540,27 +1505,29 @@ class ARCGenIIIPORIS:
 
     ## ColsMode 
     def get_ColsMode(self)-> PORISMode:
-        return self.prCols.selectedMode
+        return self.prCols.getSelectedMode()
 
     def set_ColsMode(self, mode: PORISMode)-> PORISMode :
-        return self.prCols.setMode(mode)
+        return self.prCols.selectMode(mode)
 
 
     ## prParam SubarrayFeature 
 
     # ColsDouble  
     def get_ColsDouble(self)-> float :
-        return self.prCols.selectedValue.getData()
+        v = self.prCols.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_ColsDouble(self, data: float)-> float :
-        return self.prCols.selectedValue.setData(data)
+        return self.prCols.getSelectedValue().setData(data)
 
 
     ## prParam offsetRow 
 
     # offsetRow
     def get_offsetRow(self)-> PORISValue :
-        return self.proffsetRow.selectedValue
+        return self.proffsetRow.getSelectedValue()
 
     def set_offsetRow(self, value: PORISValue)-> PORISValue :
         return self.proffsetRow.setValue(value)
@@ -1568,27 +1535,29 @@ class ARCGenIIIPORIS:
 
     ## offsetRowMode 
     def get_offsetRowMode(self)-> PORISMode:
-        return self.proffsetRow.selectedMode
+        return self.proffsetRow.getSelectedMode()
 
     def set_offsetRowMode(self, mode: PORISMode)-> PORISMode :
-        return self.proffsetRow.setMode(mode)
+        return self.proffsetRow.selectMode(mode)
 
 
     ## prParam SubarrayFeature 
 
     # offsetRowDouble  
     def get_offsetRowDouble(self)-> float :
-        return self.proffsetRow.selectedValue.getData()
+        v = self.proffsetRow.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_offsetRowDouble(self, data: float)-> float :
-        return self.proffsetRow.selectedValue.setData(data)
+        return self.proffsetRow.getSelectedValue().setData(data)
 
 
     ## prParam Rows 
 
     # Rows
     def get_Rows(self)-> PORISValue :
-        return self.prRows.selectedValue
+        return self.prRows.getSelectedValue()
 
     def set_Rows(self, value: PORISValue)-> PORISValue :
         return self.prRows.setValue(value)
@@ -1596,27 +1565,29 @@ class ARCGenIIIPORIS:
 
     ## RowsMode 
     def get_RowsMode(self)-> PORISMode:
-        return self.prRows.selectedMode
+        return self.prRows.getSelectedMode()
 
     def set_RowsMode(self, mode: PORISMode)-> PORISMode :
-        return self.prRows.setMode(mode)
+        return self.prRows.selectMode(mode)
 
 
     ## prParam SubarrayFeature 
 
     # RowsDouble  
     def get_RowsDouble(self)-> float :
-        return self.prRows.selectedValue.getData()
+        v = self.prRows.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_RowsDouble(self, data: float)-> float :
-        return self.prRows.selectedValue.setData(data)
+        return self.prRows.getSelectedValue().setData(data)
 
 
     ## prParam offsetCol 
 
     # offsetCol
     def get_offsetCol(self)-> PORISValue :
-        return self.proffsetCol.selectedValue
+        return self.proffsetCol.getSelectedValue()
 
     def set_offsetCol(self, value: PORISValue)-> PORISValue :
         return self.proffsetCol.setValue(value)
@@ -1624,43 +1595,45 @@ class ARCGenIIIPORIS:
 
     ## offsetColMode 
     def get_offsetColMode(self)-> PORISMode:
-        return self.proffsetCol.selectedMode
+        return self.proffsetCol.getSelectedMode()
 
     def set_offsetColMode(self, mode: PORISMode)-> PORISMode :
-        return self.proffsetCol.setMode(mode)
+        return self.proffsetCol.selectMode(mode)
 
 
     ## prParam SubarrayFeature 
 
     # offsetColDouble  
     def get_offsetColDouble(self)-> float :
-        return self.proffsetCol.selectedValue.getData()
+        v = self.proffsetCol.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_offsetColDouble(self, data: float)-> float :
-        return self.proffsetCol.selectedValue.setData(data)
+        return self.proffsetCol.getSelectedValue().setData(data)
 
 
     ## ExposureCtrlMode 
     def get_ExposureCtrlMode(self)-> PORISMode:
-        return self.sysExposureCtrl.selectedMode
+        return self.sysExposureCtrl.getSelectedMode()
 
     def set_ExposureCtrlMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysExposureCtrl.setMode(mode)
+        return self.sysExposureCtrl.selectMode(mode)
 
 
     ## OpenShutterMode 
     def get_OpenShutterMode(self)-> PORISMode:
-        return self.sysOpenShutter.selectedMode
+        return self.sysOpenShutter.getSelectedMode()
 
     def set_OpenShutterMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysOpenShutter.setMode(mode)
+        return self.sysOpenShutter.selectMode(mode)
 
 
     ## prParam ExpTime 
 
     # ExpTime
     def get_ExpTime(self)-> PORISValue :
-        return self.prExpTime.selectedValue
+        return self.prExpTime.getSelectedValue()
 
     def set_ExpTime(self, value: PORISValue)-> PORISValue :
         return self.prExpTime.setValue(value)
@@ -1668,45 +1641,49 @@ class ARCGenIIIPORIS:
 
     ## ExpTimeMode 
     def get_ExpTimeMode(self)-> PORISMode:
-        return self.prExpTime.selectedMode
+        return self.prExpTime.getSelectedMode()
 
     def set_ExpTimeMode(self, mode: PORISMode)-> PORISMode :
-        return self.prExpTime.setMode(mode)
+        return self.prExpTime.selectMode(mode)
 
 
     ## prParam ExposureCtrl 
 
     # ExpTimeDouble  
     def get_ExpTimeDouble(self)-> float :
-        return self.prExpTime.selectedValue.getData()
+        v = self.prExpTime.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_ExpTimeDouble(self, data: float)-> float :
-        return self.prExpTime.selectedValue.setData(data)
+        return self.prExpTime.getSelectedValue().setData(data)
 
 
     ## prParam ExposureCtrl 
 
     # ExpTimeDouble  
     def get_ExpTimeDouble(self)-> float :
-        return self.prExpTime.selectedValue.getData()
+        v = self.prExpTime.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_ExpTimeDouble(self, data: float)-> float :
-        return self.prExpTime.selectedValue.setData(data)
+        return self.prExpTime.getSelectedValue().setData(data)
 
 
     ## PixelSpeedMode 
     def get_PixelSpeedMode(self)-> PORISMode:
-        return self.sysPixelSpeed.selectedMode
+        return self.sysPixelSpeed.getSelectedMode()
 
     def set_PixelSpeedMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysPixelSpeed.setMode(mode)
+        return self.sysPixelSpeed.selectMode(mode)
 
 
     ## prParam numOfFrames 
 
     # numOfFrames
     def get_numOfFrames(self)-> PORISValue :
-        return self.prnumOfFrames.selectedValue
+        return self.prnumOfFrames.getSelectedValue()
 
     def set_numOfFrames(self, value: PORISValue)-> PORISValue :
         return self.prnumOfFrames.setValue(value)
@@ -1714,27 +1691,29 @@ class ARCGenIIIPORIS:
 
     ## numOfFramesMode 
     def get_numOfFramesMode(self)-> PORISMode:
-        return self.prnumOfFrames.selectedMode
+        return self.prnumOfFrames.getSelectedMode()
 
     def set_numOfFramesMode(self, mode: PORISMode)-> PORISMode :
-        return self.prnumOfFrames.setMode(mode)
+        return self.prnumOfFrames.selectMode(mode)
 
 
     ## prParam ExposureCtrl 
 
     # numOfFramesDouble  
     def get_numOfFramesDouble(self)-> float :
-        return self.prnumOfFrames.selectedValue.getData()
+        v = self.prnumOfFrames.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_numOfFramesDouble(self, data: float)-> float :
-        return self.prnumOfFrames.selectedValue.setData(data)
+        return self.prnumOfFrames.getSelectedValue().setData(data)
 
 
     ## prParam CalibGain 
 
     # CalibGain
     def get_CalibGain(self)-> PORISValue :
-        return self.prCalibGain.selectedValue
+        return self.prCalibGain.getSelectedValue()
 
     def set_CalibGain(self, value: PORISValue)-> PORISValue :
         return self.prCalibGain.setValue(value)
@@ -1742,51 +1721,53 @@ class ARCGenIIIPORIS:
 
     ## CalibGainMode 
     def get_CalibGainMode(self)-> PORISMode:
-        return self.prCalibGain.selectedMode
+        return self.prCalibGain.getSelectedMode()
 
     def set_CalibGainMode(self, mode: PORISMode)-> PORISMode :
-        return self.prCalibGain.setMode(mode)
+        return self.prCalibGain.selectMode(mode)
 
 
     ## prParam ExposureCtrl 
 
     # CalibGainDouble  
     def get_CalibGainDouble(self)-> float :
-        return self.prCalibGain.selectedValue.getData()
+        v = self.prCalibGain.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_CalibGainDouble(self, data: float)-> float :
-        return self.prCalibGain.selectedValue.setData(data)
+        return self.prCalibGain.getSelectedValue().setData(data)
 
 
     ## OutputSourceMode 
     def get_OutputSourceMode(self)-> PORISMode:
-        return self.sysOutputSource.selectedMode
+        return self.sysOutputSource.getSelectedMode()
 
     def set_OutputSourceMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysOutputSource.setMode(mode)
+        return self.sysOutputSource.selectMode(mode)
 
 
     ## RecompositionMode 
     def get_RecompositionMode(self)-> PORISMode:
-        return self.sysRecomposition.selectedMode
+        return self.sysRecomposition.getSelectedMode()
 
     def set_RecompositionMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysRecomposition.setMode(mode)
+        return self.sysRecomposition.selectMode(mode)
 
 
     ## DimensionsMode 
     def get_DimensionsMode(self)-> PORISMode:
-        return self.sysDimensions.selectedMode
+        return self.sysDimensions.getSelectedMode()
 
     def set_DimensionsMode(self, mode: PORISMode)-> PORISMode :
-        return self.sysDimensions.setMode(mode)
+        return self.sysDimensions.selectMode(mode)
 
 
     ## prParam uiRows 
 
     # uiRows
     def get_uiRows(self)-> PORISValue :
-        return self.pruiRows.selectedValue
+        return self.pruiRows.getSelectedValue()
 
     def set_uiRows(self, value: PORISValue)-> PORISValue :
         return self.pruiRows.setValue(value)
@@ -1794,37 +1775,41 @@ class ARCGenIIIPORIS:
 
     ## uiRowsMode 
     def get_uiRowsMode(self)-> PORISMode:
-        return self.pruiRows.selectedMode
+        return self.pruiRows.getSelectedMode()
 
     def set_uiRowsMode(self, mode: PORISMode)-> PORISMode :
-        return self.pruiRows.setMode(mode)
+        return self.pruiRows.selectMode(mode)
 
 
     ## prParam Dimensions 
 
     # uiRowsDouble  
     def get_uiRowsDouble(self)-> float :
-        return self.pruiRows.selectedValue.getData()
+        v = self.pruiRows.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_uiRowsDouble(self, data: float)-> float :
-        return self.pruiRows.selectedValue.setData(data)
+        return self.pruiRows.getSelectedValue().setData(data)
 
 
     ## prParam Dimensions 
 
     # uiRowsDouble  
     def get_uiRowsDouble(self)-> float :
-        return self.pruiRows.selectedValue.getData()
+        v = self.pruiRows.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_uiRowsDouble(self, data: float)-> float :
-        return self.pruiRows.selectedValue.setData(data)
+        return self.pruiRows.getSelectedValue().setData(data)
 
 
     ## prParam uiCols 
 
     # uiCols
     def get_uiCols(self)-> PORISValue :
-        return self.pruiCols.selectedValue
+        return self.pruiCols.getSelectedValue()
 
     def set_uiCols(self, value: PORISValue)-> PORISValue :
         return self.pruiCols.setValue(value)
@@ -1832,27 +1817,29 @@ class ARCGenIIIPORIS:
 
     ## uiColsMode 
     def get_uiColsMode(self)-> PORISMode:
-        return self.pruiCols.selectedMode
+        return self.pruiCols.getSelectedMode()
 
     def set_uiColsMode(self, mode: PORISMode)-> PORISMode :
-        return self.pruiCols.setMode(mode)
+        return self.pruiCols.selectMode(mode)
 
 
     ## prParam Dimensions 
 
     # uiColsDouble  
     def get_uiColsDouble(self)-> float :
-        return self.pruiCols.selectedValue.getData()
+        v = self.pruiCols.getSelectedValue()
+        v.__class__ = PORISValueFloat
+        return v.getData()
 
     def set_uiColsDouble(self, data: float)-> float :
-        return self.pruiCols.selectedValue.setData(data)
+        return self.pruiCols.getSelectedValue().setData(data)
 
 
     ## prParam Binning 
 
     # Binning
     def get_Binning(self)-> PORISValue :
-        return self.prBinning.selectedValue
+        return self.prBinning.getSelectedValue()
 
     def set_Binning(self, value: PORISValue)-> PORISValue :
         return self.prBinning.setValue(value)
@@ -1860,10 +1847,10 @@ class ARCGenIIIPORIS:
 
     ## BinningMode 
     def get_BinningMode(self)-> PORISMode:
-        return self.prBinning.selectedMode
+        return self.prBinning.getSelectedMode()
 
     def set_BinningMode(self, mode: PORISMode)-> PORISMode :
-        return self.prBinning.setMode(mode)
+        return self.prBinning.selectMode(mode)
 
 
     ## Action trigger ARCGenIII_expose ##
