@@ -51,7 +51,7 @@
     <value-double-range>
         <id type="integer">2000000010</id>
         <ident>n0::n3::n0::n0</ident>
-        <name>Range</name>
+        <name>Rango_Analogico</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
         <type>ValueDoubleRange</type>
@@ -66,7 +66,7 @@
     <value-double-range>
         <id type="integer">2000000013</id>
         <ident>n0::n3::n0::n3</ident>
-        <name>Range</name>
+        <name>Rango_Digital</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
         <type>ValueDoubleRange</type>

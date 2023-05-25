@@ -28,10 +28,10 @@ class tvPORIS:
         self.vlAudio_Jack = PORISValue("Audio_Jack")
         self.vlAudio_RCA = PORISValue("Audio_RCA")
         self.mdAudioMode_Mode = PORISMode("AudioMode_Mode")
-        self.vlCanal_Range = PORISValueFloat("Canal_Range")
+        self.vlCanal_Rango_Analogico = PORISValueFloat("Canal_Rango_Analogico")
         self.mdCanalMode_Digital = PORISMode("CanalMode_Digital")
         self.mdCanalMode_Analogico = PORISMode("CanalMode_Analogico")
-        self.vlCanal_Range = PORISValueFloat("Canal_Range")
+        self.vlCanal_Rango_Digital = PORISValueFloat("Canal_Rango_Digital")
         self.vlBanda_UHF = PORISValue("Banda_UHF")
         self.vlBanda_VHF = PORISValue("Banda_VHF")
         self.mdBandaMode_Analogico = PORISMode("BandaMode_Analogico")
@@ -190,14 +190,14 @@ class tvPORIS:
         self.mdAudioMode_Mode.description = ""
         self.prAudio.addMode(self.mdAudioMode_Mode)
 
-        self.vlCanal_Range.id = idcounter
+        self.vlCanal_Rango_Analogico.id = idcounter
         idcounter += 1
-        self.vlCanal_Range.ident = "Canal_Range"
-        self.vlCanal_Range.description = ""
-        self.vlCanal_Range.min = 1
-        self.vlCanal_Range.default_data = 1
-        self.vlCanal_Range.max = 16
-        self.prCanal.addValue(self.vlCanal_Range)
+        self.vlCanal_Rango_Analogico.ident = "Canal_Rango_Analogico"
+        self.vlCanal_Rango_Analogico.description = ""
+        self.vlCanal_Rango_Analogico.min = 1
+        self.vlCanal_Rango_Analogico.default_data = 1
+        self.vlCanal_Rango_Analogico.max = 16
+        self.prCanal.addValue(self.vlCanal_Rango_Analogico)
 
         self.mdCanalMode_Digital.id = idcounter
         idcounter += 1
@@ -211,14 +211,14 @@ class tvPORIS:
         self.mdCanalMode_Analogico.description = ""
         self.prCanal.addMode(self.mdCanalMode_Analogico)
 
-        self.vlCanal_Range.id = idcounter
+        self.vlCanal_Rango_Digital.id = idcounter
         idcounter += 1
-        self.vlCanal_Range.ident = "Canal_Range"
-        self.vlCanal_Range.description = ""
-        self.vlCanal_Range.min = 1
-        self.vlCanal_Range.default_data = 1
-        self.vlCanal_Range.max = 999
-        self.prCanal.addValue(self.vlCanal_Range)
+        self.vlCanal_Rango_Digital.ident = "Canal_Rango_Digital"
+        self.vlCanal_Rango_Digital.description = ""
+        self.vlCanal_Rango_Digital.min = 1
+        self.vlCanal_Rango_Digital.default_data = 1
+        self.vlCanal_Rango_Digital.max = 999
+        self.prCanal.addValue(self.vlCanal_Rango_Digital)
 
         self.vlBanda_UHF.id = idcounter
         idcounter += 1
@@ -313,10 +313,10 @@ class tvPORIS:
         self.mdAntenaMode_Engineering.addSubMode(self.mdCanalMode_Digital)
         # Marcamos CanalMode_Analogico como elegible para AntenaMode_Engineering
         self.mdAntenaMode_Engineering.addSubMode(self.mdCanalMode_Analogico)
-        # Marcamos Canal_Range como elegible para CanalMode_Digital
-        self.mdCanalMode_Digital.addValue(self.vlCanal_Range)
-        # Marcamos Canal_Range como elegible para CanalMode_Analogico
-        self.mdCanalMode_Analogico.addValue(self.vlCanal_Range)
+        # Marcamos Canal_Rango_Digital como elegible para CanalMode_Digital
+        self.mdCanalMode_Digital.addValue(self.vlCanal_Rango_Digital)
+        # Marcamos Canal_Rango_Analogico como elegible para CanalMode_Analogico
+        self.mdCanalMode_Analogico.addValue(self.vlCanal_Rango_Analogico)
         # Marcamos BandaMode_Analogico como elegible para AntenaMode_Analogico
         self.mdAntenaMode_Analogico.addSubMode(self.mdBandaMode_Analogico)
         # Marcamos BandaMode_Analogico como elegible para AntenaMode_Engineering
