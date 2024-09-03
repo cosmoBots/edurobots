@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sub-systems-v4>
+<poris>
     <value>
-        <id type="integer">-1</id>
-        <ident>VIRT-1</ident>
-        <name>WBW</name>
-        <node-type-id type="integer">5</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Value</type>
-        <value-formatter-id type="integer" nil="true"/>
-        <destinations type="array"/>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </value>
-    <value>
-        <id type="integer">2000000038</id>
+        <id type="integer">2000000029</id>
         <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#0</ident>
         <name>0</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
         <labels type="array"/>
     </value>
     <value>
-        <id type="integer">2000000039</id>
+        <id type="integer">2000000030</id>
         <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#10</ident>
         <name>10</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
         <labels type="array"/>
     </value>
     <value>
-        <id type="integer">2000000040</id>
+        <id type="integer">2000000031</id>
         <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#-10</ident>
         <name>-10</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
         <labels type="array"/>
     </value>
     <value>
-        <id type="integer">2000000044</id>
+        <id type="integer">2000000035</id>
         <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#0</ident>
         <name>0</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
         <labels type="array"/>
     </value>
     <value>
-        <id type="integer">2000000045</id>
+        <id type="integer">2000000036</id>
         <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#10</ident>
         <name>10</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
         <labels type="array"/>
     </value>
     <value>
-        <id type="integer">2000000046</id>
+        <id type="integer">2000000037</id>
         <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#-10</ident>
         <name>-10</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value>
+    <value>
+        <id type="integer">-1</id>
+        <ident>VIRT-1</ident>
+        <name>Yes</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
@@ -87,10 +87,10 @@
     <value>
         <id type="integer">-2</id>
         <ident>VIRT-2</ident>
-        <name>Yes</name>
+        <name>WBW</name>
         <node-type-id type="integer">5</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Value</type>
+        <type>PORISValue</type>
         <value-formatter-id type="integer" nil="true"/>
         <destinations type="array"/>
         <node-attributes type="array"/>
@@ -99,12 +99,12 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000033</id>
-        <ident>mrline/s#LineFollower/m#WBW</ident>
-        <name>WBW</name>
+        <id type="integer">2000000047</id>
+        <ident>mrnextstep/s#NextStep/m#Yes</ident>
+        <name>Yes</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Value">
                 <id type="integer">-1</id>
@@ -117,12 +117,12 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000056</id>
-        <ident>mrnextstep/s#NextStep/m#Yes</ident>
-        <name>Yes</name>
+        <id type="integer">2000000049</id>
+        <ident>mrline/s#LineFollower/m#WBW</ident>
+        <name>WBW</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Value">
                 <id type="integer">-2</id>
@@ -135,15 +135,87 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000012</id>
+        <id type="integer">2000000005</id>
         <ident>mrdecision/s#Decision/m#BBW_01</ident>
         <name>BBW_01</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000033</id>
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000011</id>
+        <ident>mrdecision/s#Decision/m#BWW_01</ident>
+        <name>BWW_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000012</id>
+        <ident>mrdecision/s#Decision/m#BWW_03</ident>
+        <name>BWW_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000015</id>
+        <ident>mrdecision/s#Decision/m#WBB_03</ident>
+        <name>WBB_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000017</id>
+        <ident>mrdecision/s#Decision/m#WBW_01</ident>
+        <name>WBW_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
         </destinations>
@@ -154,575 +226,15 @@
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
         <id type="integer">2000000018</id>
-        <ident>mrdecision/s#Decision/m#BWW_01</ident>
-        <name>BWW_01</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000019</id>
-        <ident>mrdecision/s#Decision/m#BWW_03</ident>
-        <name>BWW_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000022</id>
-        <ident>mrdecision/s#Decision/m#WBB_03</ident>
-        <name>WBB_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000024</id>
-        <ident>mrdecision/s#Decision/m#WBW_01</ident>
-        <name>WBW_01</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000025</id>
         <ident>mrdecision/s#Decision/m#WBW_03</ident>
         <name>WBW_03</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000027</id>
-        <ident>mrdecision/s#Decision/m#WWB_01</ident>
-        <name>WWB_01</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000028</id>
-        <ident>mrdecision/s#Decision/m#WWB_03</ident>
-        <name>WWB_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000035</id>
-        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
-        <name>Stop</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000038</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#0</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000036</id>
-        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
-        <name>Forward</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000039</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#10</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000037</id>
-        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
-        <name>Back</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000040</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#-10</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000041</id>
-        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
-        <name>Stop</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000044</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#0</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000042</id>
-        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
-        <name>Forward</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000045</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#10</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000043</id>
-        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
-        <name>Back</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Value">
-                <id type="integer">2000000046</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#-10</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000047</id>
-        <ident>mrmob/s#Mobility/m#Forward</ident>
-        <name>Forward</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000036</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000042</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000048</id>
-        <ident>mrmob/s#Mobility/m#TurnRight</ident>
-        <name>TurnRight</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000037</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000042</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000049</id>
-        <ident>mrmob/s#Mobility/m#TurnLeft</ident>
-        <name>TurnLeft</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000043</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000036</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000050</id>
-        <ident>mrmob/s#Mobility/m#Stop</ident>
-        <name>Stop</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000041</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000035</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000051</id>
-        <ident>mrmob/s#Mobility/m#SoftLeft</ident>
-        <name>SoftLeft</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000041</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000036</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000052</id>
-        <ident>mrmob/s#Mobility/m#SoftRight</ident>
-        <name>SoftRight</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000035</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000042</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">-7</id>
-        <ident>ENG-7</ident>
-        <name>Engineering</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000035</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000036</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000037</id>
-                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000041</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000042</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000043</id>
-                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000008</id>
-        <ident>mrdecision/s#Decision/m#BBB_00</ident>
-        <name>BBB_00</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000009</id>
-        <ident>mrdecision/s#Decision/m#BBB_01</ident>
-        <name>BBB_01</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
-                <ident>mrnextstep/s#NextStep/m#Yes</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000048</id>
-                <ident>mrmob/s#Mobility/m#TurnRight</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000010</id>
-        <ident>mrdecision/s#Decision/m#BBB_03</ident>
-        <name>BBB_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
-                <ident>mrnextstep/s#NextStep/m#Yes</ident>
-            </destination>
             <destination type="Mode">
                 <id type="integer">2000000049</id>
-                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000011</id>
-        <ident>mrdecision/s#Decision/m#BBW_00</ident>
-        <name>BBW_00</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000013</id>
-        <ident>mrdecision/s#Decision/m#BBW_03</ident>
-        <name>BBW_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
-                <ident>mrnextstep/s#NextStep/m#Yes</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000049</id>
-                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000014</id>
-        <ident>mrdecision/s#Decision/m#BWB_00</ident>
-        <name>BWB_00</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000015</id>
-        <ident>mrdecision/s#Decision/m#BWB_01</ident>
-        <name>BWB_01</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000016</id>
-        <ident>mrdecision/s#Decision/m#BWB_03</ident>
-        <name>BWB_03</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000017</id>
-        <ident>mrdecision/s#Decision/m#BWW_00</ident>
-        <name>BWW_00</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -732,15 +244,15 @@
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
         <id type="integer">2000000020</id>
-        <ident>mrdecision/s#Decision/m#WBB_00</ident>
-        <name>WBB_00</name>
+        <ident>mrdecision/s#Decision/m#WWB_01</ident>
+        <name>WWB_01</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -750,37 +262,15 @@
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
         <id type="integer">2000000021</id>
-        <ident>mrdecision/s#Decision/m#WBB_01</ident>
-        <name>WBB_01</name>
+        <ident>mrdecision/s#Decision/m#WWB_03</ident>
+        <name>WWB_03</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000048</id>
-                <ident>mrmob/s#Mobility/m#TurnRight</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
-                <ident>mrnextstep/s#NextStep/m#Yes</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000023</id>
-        <ident>mrdecision/s#Decision/m#WBW_00</ident>
-        <name>WBW_00</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -790,15 +280,15 @@
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
         <id type="integer">2000000026</id>
-        <ident>mrdecision/s#Decision/m#WWB_00</ident>
-        <name>WWB_00</name>
+        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
+        <name>Stop</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+            <destination type="Value">
+                <id type="integer">2000000029</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#0</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -807,16 +297,16 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000029</id>
-        <ident>mrdecision/s#Decision/m#WWW_00</ident>
-        <name>WWW_00</name>
+        <id type="integer">2000000027</id>
+        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
+        <name>Forward</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+            <destination type="Value">
+                <id type="integer">2000000030</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#10</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -825,16 +315,16 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000030</id>
-        <ident>mrdecision/s#Decision/m#WWW_01</ident>
-        <name>WWW_01</name>
+        <id type="integer">2000000028</id>
+        <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
+        <name>Back</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000047</id>
-                <ident>mrmob/s#Mobility/m#Forward</ident>
+            <destination type="Value">
+                <id type="integer">2000000031</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#-10</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -843,16 +333,16 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000031</id>
-        <ident>mrdecision/s#Decision/m#WWW_03</ident>
-        <name>WWW_03</name>
+        <id type="integer">2000000032</id>
+        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
+        <name>Stop</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
+            <destination type="Value">
+                <id type="integer">2000000035</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#0</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -861,48 +351,56 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">-5</id>
-        <ident>ENG-5</ident>
-        <name>Engineering</name>
+        <id type="integer">2000000033</id>
+        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
+        <name>Forward</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
+            <destination type="Value">
+                <id type="integer">2000000036</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#10</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000034</id>
+        <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
+        <name>Back</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Value">
+                <id type="integer">2000000037</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#-10</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000038</id>
+        <ident>mrmob/s#Mobility/m#Forward</ident>
+        <name>Forward</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000027</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
+            </destination>
             <destination type="Mode">
                 <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000047</id>
-                <ident>mrmob/s#Mobility/m#Forward</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000048</id>
-                <ident>mrmob/s#Mobility/m#TurnRight</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000049</id>
-                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
-                <ident>mrmob/s#Mobility/m#Stop</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000051</id>
-                <ident>mrmob/s#Mobility/m#SoftLeft</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000052</id>
-                <ident>mrmob/s#Mobility/m#SoftRight</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
-                <ident>mrnextstep/s#NextStep/m#Yes</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">-7</id>
-                <ident>ENG-7</ident>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -911,44 +409,42 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000001</id>
-        <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
-        <name>01_fragment</name>
+        <id type="integer">2000000039</id>
+        <ident>mrmob/s#Mobility/m#TurnRight</ident>
+        <name>TurnRight</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000030</id>
-                <ident>mrdecision/s#Decision/m#WWW_01</ident>
+                <id type="integer">2000000028</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000033</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000040</id>
+        <ident>mrmob/s#Mobility/m#TurnLeft</ident>
+        <name>TurnLeft</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000034</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
             </destination>
             <destination type="Mode">
                 <id type="integer">2000000027</id>
-                <ident>mrdecision/s#Decision/m#WWB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000024</id>
-                <ident>mrdecision/s#Decision/m#WBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000021</id>
-                <ident>mrdecision/s#Decision/m#WBB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000018</id>
-                <ident>mrdecision/s#Decision/m#BWW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000015</id>
-                <ident>mrdecision/s#Decision/m#BWB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000012</id>
-                <ident>mrdecision/s#Decision/m#BBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000009</id>
-                <ident>mrdecision/s#Decision/m#BBB_01</ident>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -957,90 +453,20 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000002</id>
-        <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
-        <name>03_fragment</name>
+        <id type="integer">2000000041</id>
+        <ident>mrmob/s#Mobility/m#Stop</ident>
+        <name>Stop</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000031</id>
-                <ident>mrdecision/s#Decision/m#WWW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000028</id>
-                <ident>mrdecision/s#Decision/m#WWB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000025</id>
-                <ident>mrdecision/s#Decision/m#WBW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000022</id>
-                <ident>mrdecision/s#Decision/m#WBB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000019</id>
-                <ident>mrdecision/s#Decision/m#BWW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000016</id>
-                <ident>mrdecision/s#Decision/m#BWB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000013</id>
-                <ident>mrdecision/s#Decision/m#BBW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000010</id>
-                <ident>mrdecision/s#Decision/m#BBB_03</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </mode>
-    <mode>
-        <default-mode-id type="integer" nil="true"/>
-        <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000003</id>
-        <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
-        <name>00_stop</name>
-        <node-type-id type="integer">6</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>Mode</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000029</id>
-                <ident>mrdecision/s#Decision/m#WWW_00</ident>
+                <id type="integer">2000000032</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
             <destination type="Mode">
                 <id type="integer">2000000026</id>
-                <ident>mrdecision/s#Decision/m#WWB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000023</id>
-                <ident>mrdecision/s#Decision/m#WBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000020</id>
-                <ident>mrdecision/s#Decision/m#WBB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000017</id>
-                <ident>mrdecision/s#Decision/m#BWW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000014</id>
-                <ident>mrdecision/s#Decision/m#BWB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000011</id>
-                <ident>mrdecision/s#Decision/m#BBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000008</id>
-                <ident>mrdecision/s#Decision/m#BBB_00</ident>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -1049,16 +475,20 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000004</id>
-        <ident>missionrobot/s#MissionRobot/m#Inactive</ident>
-        <name>Inactive</name>
+        <id type="integer">2000000042</id>
+        <ident>mrmob/s#Mobility/m#SoftLeft</ident>
+        <name>SoftLeft</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000003</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+                <id type="integer">2000000032</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000027</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -1067,20 +497,20 @@
     <mode>
         <default-mode-id type="integer" nil="true"/>
         <default-value-id type="integer" nil="true"/>
-        <id type="integer">2000000005</id>
-        <ident>missionrobot/s#MissionRobot/m#Active</ident>
-        <name>Active</name>
+        <id type="integer">2000000043</id>
+        <ident>mrmob/s#Mobility/m#SoftRight</ident>
+        <name>SoftRight</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000001</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+                <id type="integer">2000000026</id>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000002</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
+                <id type="integer">2000000033</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -1094,107 +524,513 @@
         <name>Engineering</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000008</id>
-                <ident>mrdecision/s#Decision/m#BBB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000009</id>
-                <ident>mrdecision/s#Decision/m#BBB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000010</id>
-                <ident>mrdecision/s#Decision/m#BBB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000011</id>
-                <ident>mrdecision/s#Decision/m#BBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000012</id>
-                <ident>mrdecision/s#Decision/m#BBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000013</id>
-                <ident>mrdecision/s#Decision/m#BBW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000014</id>
-                <ident>mrdecision/s#Decision/m#BWB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000015</id>
-                <ident>mrdecision/s#Decision/m#BWB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000016</id>
-                <ident>mrdecision/s#Decision/m#BWB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000017</id>
-                <ident>mrdecision/s#Decision/m#BWW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000018</id>
-                <ident>mrdecision/s#Decision/m#BWW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000019</id>
-                <ident>mrdecision/s#Decision/m#BWW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000020</id>
-                <ident>mrdecision/s#Decision/m#WBB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000021</id>
-                <ident>mrdecision/s#Decision/m#WBB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000022</id>
-                <ident>mrdecision/s#Decision/m#WBB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000023</id>
-                <ident>mrdecision/s#Decision/m#WBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000024</id>
-                <ident>mrdecision/s#Decision/m#WBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000025</id>
-                <ident>mrdecision/s#Decision/m#WBW_03</ident>
-            </destination>
-            <destination type="Mode">
                 <id type="integer">2000000026</id>
-                <ident>mrdecision/s#Decision/m#WWB_00</ident>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
             <destination type="Mode">
                 <id type="integer">2000000027</id>
-                <ident>mrdecision/s#Decision/m#WWB_01</ident>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
             <destination type="Mode">
                 <id type="integer">2000000028</id>
-                <ident>mrdecision/s#Decision/m#WWB_03</ident>
+                <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000029</id>
-                <ident>mrdecision/s#Decision/m#WWW_00</ident>
+                <id type="integer">2000000032</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000030</id>
+                <id type="integer">2000000033</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000034</id>
+                <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000001</id>
+        <ident>mrdecision/s#Decision/m#BBB_00</ident>
+        <name>BBB_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000002</id>
+        <ident>mrdecision/s#Decision/m#BBB_01</ident>
+        <name>BBB_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000047</id>
+                <ident>mrnextstep/s#NextStep/m#Yes</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000039</id>
+                <ident>mrmob/s#Mobility/m#TurnRight</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000003</id>
+        <ident>mrdecision/s#Decision/m#BBB_03</ident>
+        <name>BBB_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000047</id>
+                <ident>mrnextstep/s#NextStep/m#Yes</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000040</id>
+                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000004</id>
+        <ident>mrdecision/s#Decision/m#BBW_00</ident>
+        <name>BBW_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000006</id>
+        <ident>mrdecision/s#Decision/m#BBW_03</ident>
+        <name>BBW_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000047</id>
+                <ident>mrnextstep/s#NextStep/m#Yes</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000040</id>
+                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000007</id>
+        <ident>mrdecision/s#Decision/m#BWB_00</ident>
+        <name>BWB_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000008</id>
+        <ident>mrdecision/s#Decision/m#BWB_01</ident>
+        <name>BWB_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000009</id>
+        <ident>mrdecision/s#Decision/m#BWB_03</ident>
+        <name>BWB_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000010</id>
+        <ident>mrdecision/s#Decision/m#BWW_00</ident>
+        <name>BWW_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000013</id>
+        <ident>mrdecision/s#Decision/m#WBB_00</ident>
+        <name>WBB_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000014</id>
+        <ident>mrdecision/s#Decision/m#WBB_01</ident>
+        <name>WBB_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000039</id>
+                <ident>mrmob/s#Mobility/m#TurnRight</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000047</id>
+                <ident>mrnextstep/s#NextStep/m#Yes</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000016</id>
+        <ident>mrdecision/s#Decision/m#WBW_00</ident>
+        <name>WBW_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000019</id>
+        <ident>mrdecision/s#Decision/m#WWB_00</ident>
+        <name>WWB_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000022</id>
+        <ident>mrdecision/s#Decision/m#WWW_00</ident>
+        <name>WWW_00</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000023</id>
+        <ident>mrdecision/s#Decision/m#WWW_01</ident>
+        <name>WWW_01</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000038</id>
+                <ident>mrmob/s#Mobility/m#Forward</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000024</id>
+        <ident>mrdecision/s#Decision/m#WWW_03</ident>
+        <name>WWW_03</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000051</id>
+        <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+        <name>01_fragment</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000023</id>
                 <ident>mrdecision/s#Decision/m#WWW_01</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000031</id>
+                <id type="integer">2000000020</id>
+                <ident>mrdecision/s#Decision/m#WWB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000017</id>
+                <ident>mrdecision/s#Decision/m#WBW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000014</id>
+                <ident>mrdecision/s#Decision/m#WBB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000011</id>
+                <ident>mrdecision/s#Decision/m#BWW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000008</id>
+                <ident>mrdecision/s#Decision/m#BWB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000005</id>
+                <ident>mrdecision/s#Decision/m#BBW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000002</id>
+                <ident>mrdecision/s#Decision/m#BBB_01</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000052</id>
+        <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
+        <name>03_fragment</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000024</id>
                 <ident>mrdecision/s#Decision/m#WWW_03</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">-5</id>
-                <ident>ENG-5</ident>
+                <id type="integer">2000000021</id>
+                <ident>mrdecision/s#Decision/m#WWB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000018</id>
+                <ident>mrdecision/s#Decision/m#WBW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000015</id>
+                <ident>mrdecision/s#Decision/m#WBB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000012</id>
+                <ident>mrdecision/s#Decision/m#BWW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000009</id>
+                <ident>mrdecision/s#Decision/m#BWB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000006</id>
+                <ident>mrdecision/s#Decision/m#BBW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000003</id>
+                <ident>mrdecision/s#Decision/m#BBB_03</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000053</id>
+        <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+        <name>00_stop</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000022</id>
+                <ident>mrdecision/s#Decision/m#WWW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000019</id>
+                <ident>mrdecision/s#Decision/m#WWB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000016</id>
+                <ident>mrdecision/s#Decision/m#WBW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000013</id>
+                <ident>mrdecision/s#Decision/m#WBB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000010</id>
+                <ident>mrdecision/s#Decision/m#BWW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000007</id>
+                <ident>mrdecision/s#Decision/m#BWB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000004</id>
+                <ident>mrdecision/s#Decision/m#BBW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000001</id>
+                <ident>mrdecision/s#Decision/m#BBB_00</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000054</id>
+        <ident>missionrobot/s#MissionRobot/m#Inactive</ident>
+        <name>Inactive</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000053</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000055</id>
+        <ident>missionrobot/s#MissionRobot/m#Active</ident>
+        <name>Active</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000051</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000052</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
@@ -1208,19 +1044,39 @@
         <name>Engineering</name>
         <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>Mode</type>
+        <type>PORISMode</type>
         <destinations type="array">
             <destination type="Mode">
-                <id type="integer">2000000001</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+                <id type="integer">2000000038</id>
+                <ident>mrmob/s#Mobility/m#Forward</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000002</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
+                <id type="integer">2000000039</id>
+                <ident>mrmob/s#Mobility/m#TurnRight</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000003</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+                <id type="integer">2000000040</id>
+                <ident>mrmob/s#Mobility/m#TurnLeft</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000041</id>
+                <ident>mrmob/s#Mobility/m#Stop</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000042</id>
+                <ident>mrmob/s#Mobility/m#SoftLeft</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000043</id>
+                <ident>mrmob/s#Mobility/m#SoftRight</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000047</id>
+                <ident>mrnextstep/s#NextStep/m#Yes</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
             <destination type="Mode">
                 <id type="integer">-4</id>
@@ -1230,58 +1086,181 @@
         <node-attributes type="array"/>
         <labels type="array"/>
     </mode>
-    <sub-system>
+    <mode>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000034</id>
-        <ident>mrline/s#LineFollower</ident>
-        <name>LineFollower</name>
-        <node-type-id type="integer">4</node-type-id>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">-8</id>
+        <ident>ENG-8</ident>
+        <name>Engineering</name>
+        <node-type-id type="integer">6</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
-                <id type="integer">-1</id>
-                <ident>VIRT-1</ident>
+            <destination type="Mode">
+                <id type="integer">2000000001</id>
+                <ident>mrdecision/s#Decision/m#BBB_00</ident>
             </destination>
             <destination type="Mode">
-                <id type="integer">2000000033</id>
-                <ident>mrline/s#LineFollower/m#WBW</ident>
+                <id type="integer">2000000002</id>
+                <ident>mrdecision/s#Decision/m#BBB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000003</id>
+                <ident>mrdecision/s#Decision/m#BBB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000004</id>
+                <ident>mrdecision/s#Decision/m#BBW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000005</id>
+                <ident>mrdecision/s#Decision/m#BBW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000006</id>
+                <ident>mrdecision/s#Decision/m#BBW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000007</id>
+                <ident>mrdecision/s#Decision/m#BWB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000008</id>
+                <ident>mrdecision/s#Decision/m#BWB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000009</id>
+                <ident>mrdecision/s#Decision/m#BWB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000010</id>
+                <ident>mrdecision/s#Decision/m#BWW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000011</id>
+                <ident>mrdecision/s#Decision/m#BWW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000012</id>
+                <ident>mrdecision/s#Decision/m#BWW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000013</id>
+                <ident>mrdecision/s#Decision/m#WBB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000014</id>
+                <ident>mrdecision/s#Decision/m#WBB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000015</id>
+                <ident>mrdecision/s#Decision/m#WBB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000016</id>
+                <ident>mrdecision/s#Decision/m#WBW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000017</id>
+                <ident>mrdecision/s#Decision/m#WBW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000018</id>
+                <ident>mrdecision/s#Decision/m#WBW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000019</id>
+                <ident>mrdecision/s#Decision/m#WWB_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000020</id>
+                <ident>mrdecision/s#Decision/m#WWB_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000021</id>
+                <ident>mrdecision/s#Decision/m#WWB_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000022</id>
+                <ident>mrdecision/s#Decision/m#WWW_00</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000023</id>
+                <ident>mrdecision/s#Decision/m#WWW_01</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000024</id>
+                <ident>mrdecision/s#Decision/m#WWW_03</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">-3</id>
+                <ident>ENG-3</ident>
             </destination>
         </destinations>
         <node-attributes type="array"/>
         <labels type="array"/>
-    </sub-system>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">-7</id>
+        <ident>ENG-7</ident>
+        <name>Engineering</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="Mode">
+                <id type="integer">2000000051</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000052</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">2000000053</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+            </destination>
+            <destination type="Mode">
+                <id type="integer">-8</id>
+                <ident>ENG-8</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
     <sub-system>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000054</id>
+        <id type="integer">2000000045</id>
         <ident>mrmob/s#Mobility/p#RightWheelSpeed</ident>
         <name>RightWheelSpeed</name>
         <node-type-id type="integer">4</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISNode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000035</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000026</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000036</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000027</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000037</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000028</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000038</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000029</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#0</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000039</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000030</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#10</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000040</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000031</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#-10</ident>
             </destination>
         </destinations>
@@ -1290,35 +1269,35 @@
     </sub-system>
     <sub-system>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000055</id>
+        <id type="integer">2000000046</id>
         <ident>mrmob/s#Mobility/p#LeftWheelSpeed</ident>
         <name>LeftWheelSpeed</name>
         <node-type-id type="integer">4</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISNode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000041</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000032</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000042</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000033</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000043</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000034</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000044</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000035</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#0</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000045</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000036</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#10</ident>
             </destination>
-            <destination type="Value">
-                <id type="integer">2000000046</id>
+            <destination type="PORISValue">
+                <id type="integer">2000000037</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#-10</ident>
             </destination>
         </destinations>
@@ -1327,19 +1306,19 @@
     </sub-system>
     <sub-system>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000057</id>
+        <id type="integer">2000000048</id>
         <ident>mrnextstep/s#NextStep</ident>
         <name>NextStep</name>
         <node-type-id type="integer">4</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISNode</type>
         <destinations type="array">
-            <destination type="Value">
-                <id type="integer">-2</id>
-                <ident>VIRT-2</ident>
+            <destination type="PORISValue">
+                <id type="integer">-1</id>
+                <ident>VIRT-1</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000056</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
         </destinations>
@@ -1348,204 +1327,67 @@
     </sub-system>
     <sub-system>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000053</id>
+        <id type="integer">2000000050</id>
+        <ident>mrline/s#LineFollower</ident>
+        <name>LineFollower</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">-2</id>
+                <ident>VIRT-2</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000049</id>
+                <ident>mrline/s#LineFollower/m#WBW</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">2000000044</id>
         <ident>mrmob/s#Mobility</ident>
         <name>Mobility</name>
         <node-type-id type="integer">4</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISNode</type>
         <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000047</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000038</id>
                 <ident>mrmob/s#Mobility/m#Forward</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000048</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000039</id>
                 <ident>mrmob/s#Mobility/m#TurnRight</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000049</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000040</id>
                 <ident>mrmob/s#Mobility/m#TurnLeft</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000050</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000051</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000042</id>
                 <ident>mrmob/s#Mobility/m#SoftLeft</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">2000000052</id>
+            <destination type="PORISMode">
+                <id type="integer">2000000043</id>
                 <ident>mrmob/s#Mobility/m#SoftRight</ident>
             </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000054</id>
+            <destination type="PORISNode">
+                <id type="integer">2000000045</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed</ident>
             </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000055</id>
+            <destination type="PORISNode">
+                <id type="integer">2000000046</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed</ident>
             </destination>
-            <destination type="Mode">
-                <id type="integer">-7</id>
-                <ident>ENG-7</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </sub-system>
-    <sub-system>
-        <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000032</id>
-        <ident>mrdecision/s#Decision</ident>
-        <name>Decision</name>
-        <node-type-id type="integer">4</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000008</id>
-                <ident>mrdecision/s#Decision/m#BBB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000009</id>
-                <ident>mrdecision/s#Decision/m#BBB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000010</id>
-                <ident>mrdecision/s#Decision/m#BBB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000011</id>
-                <ident>mrdecision/s#Decision/m#BBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000012</id>
-                <ident>mrdecision/s#Decision/m#BBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000013</id>
-                <ident>mrdecision/s#Decision/m#BBW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000014</id>
-                <ident>mrdecision/s#Decision/m#BWB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000015</id>
-                <ident>mrdecision/s#Decision/m#BWB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000016</id>
-                <ident>mrdecision/s#Decision/m#BWB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000017</id>
-                <ident>mrdecision/s#Decision/m#BWW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000018</id>
-                <ident>mrdecision/s#Decision/m#BWW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000019</id>
-                <ident>mrdecision/s#Decision/m#BWW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000020</id>
-                <ident>mrdecision/s#Decision/m#WBB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000021</id>
-                <ident>mrdecision/s#Decision/m#WBB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000022</id>
-                <ident>mrdecision/s#Decision/m#WBB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000023</id>
-                <ident>mrdecision/s#Decision/m#WBW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000024</id>
-                <ident>mrdecision/s#Decision/m#WBW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000025</id>
-                <ident>mrdecision/s#Decision/m#WBW_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000026</id>
-                <ident>mrdecision/s#Decision/m#WWB_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000027</id>
-                <ident>mrdecision/s#Decision/m#WWB_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000028</id>
-                <ident>mrdecision/s#Decision/m#WWB_03</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000029</id>
-                <ident>mrdecision/s#Decision/m#WWW_00</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000030</id>
-                <ident>mrdecision/s#Decision/m#WWW_01</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000031</id>
-                <ident>mrdecision/s#Decision/m#WWW_03</ident>
-            </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000034</id>
-                <ident>mrline/s#LineFollower</ident>
-            </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000053</id>
-                <ident>mrmob/s#Mobility</ident>
-            </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000057</id>
-                <ident>mrnextstep/s#NextStep</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">-5</id>
-                <ident>ENG-5</ident>
-            </destination>
-        </destinations>
-        <node-attributes type="array"/>
-        <labels type="array"/>
-    </sub-system>
-    <sub-system>
-        <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000007</id>
-        <ident>missionrobot/s#MissionRobot/s#Path</ident>
-        <name>Path</name>
-        <node-type-id type="integer">4</node-type-id>
-        <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
-        <destinations type="array">
-            <destination type="Mode">
-                <id type="integer">2000000001</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000002</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
-            </destination>
-            <destination type="Mode">
-                <id type="integer">2000000003</id>
-                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
-            </destination>
-            <destination type="SubSystem">
-                <id type="integer">2000000032</id>
-                <ident>mrdecision/s#Decision</ident>
-            </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">-4</id>
                 <ident>ENG-4</ident>
             </destination>
@@ -1555,26 +1397,122 @@
     </sub-system>
     <sub-system>
         <default-mode-id type="integer" nil="true"/>
-        <id type="integer">2000000006</id>
-        <ident>missionrobot/s#MissionRobot</ident>
-        <name>MissionRobot</name>
+        <id type="integer">2000000025</id>
+        <ident>mrdecision/s#Decision</ident>
+        <name>Decision</name>
         <node-type-id type="integer">4</node-type-id>
         <project-id type="integer">13</project-id>
-        <type>SubSystem</type>
+        <type>PORISNode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
+                <id type="integer">2000000001</id>
+                <ident>mrdecision/s#Decision/m#BBB_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000002</id>
+                <ident>mrdecision/s#Decision/m#BBB_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000003</id>
+                <ident>mrdecision/s#Decision/m#BBB_03</ident>
+            </destination>
+            <destination type="PORISMode">
                 <id type="integer">2000000004</id>
-                <ident>missionrobot/s#MissionRobot/m#Inactive</ident>
+                <ident>mrdecision/s#Decision/m#BBW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000005</id>
-                <ident>missionrobot/s#MissionRobot/m#Active</ident>
+                <ident>mrdecision/s#Decision/m#BBW_01</ident>
             </destination>
-            <destination type="SubSystem">
+            <destination type="PORISMode">
+                <id type="integer">2000000006</id>
+                <ident>mrdecision/s#Decision/m#BBW_03</ident>
+            </destination>
+            <destination type="PORISMode">
                 <id type="integer">2000000007</id>
-                <ident>missionrobot/s#MissionRobot/s#Path</ident>
+                <ident>mrdecision/s#Decision/m#BWB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
+                <id type="integer">2000000008</id>
+                <ident>mrdecision/s#Decision/m#BWB_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000009</id>
+                <ident>mrdecision/s#Decision/m#BWB_03</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000010</id>
+                <ident>mrdecision/s#Decision/m#BWW_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000011</id>
+                <ident>mrdecision/s#Decision/m#BWW_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000012</id>
+                <ident>mrdecision/s#Decision/m#BWW_03</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000013</id>
+                <ident>mrdecision/s#Decision/m#WBB_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000014</id>
+                <ident>mrdecision/s#Decision/m#WBB_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000015</id>
+                <ident>mrdecision/s#Decision/m#WBB_03</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000016</id>
+                <ident>mrdecision/s#Decision/m#WBW_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000017</id>
+                <ident>mrdecision/s#Decision/m#WBW_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000018</id>
+                <ident>mrdecision/s#Decision/m#WBW_03</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000019</id>
+                <ident>mrdecision/s#Decision/m#WWB_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000020</id>
+                <ident>mrdecision/s#Decision/m#WWB_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000021</id>
+                <ident>mrdecision/s#Decision/m#WWB_03</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000022</id>
+                <ident>mrdecision/s#Decision/m#WWW_00</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000023</id>
+                <ident>mrdecision/s#Decision/m#WWW_01</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000024</id>
+                <ident>mrdecision/s#Decision/m#WWW_03</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">2000000044</id>
+                <ident>mrmob/s#Mobility</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">2000000048</id>
+                <ident>mrnextstep/s#NextStep</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">2000000050</id>
+                <ident>mrline/s#LineFollower</ident>
+            </destination>
+            <destination type="PORISMode">
                 <id type="integer">-3</id>
                 <ident>ENG-3</ident>
             </destination>
@@ -1582,4 +1520,66 @@
         <node-attributes type="array"/>
         <labels type="array"/>
     </sub-system>
-</sub-systems-v4>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">2000000057</id>
+        <ident>missionrobot/s#MissionRobot/s#Path</ident>
+        <name>Path</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISNode">
+                <id type="integer">2000000025</id>
+                <ident>mrdecision/s#Decision</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000051</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000052</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000053</id>
+                <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">-8</id>
+                <ident>ENG-8</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">2000000056</id>
+        <ident>missionrobot/s#MissionRobot</ident>
+        <name>MissionRobot</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000054</id>
+                <ident>missionrobot/s#MissionRobot/m#Inactive</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000055</id>
+                <ident>missionrobot/s#MissionRobot/m#Active</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">2000000057</id>
+                <ident>missionrobot/s#MissionRobot/s#Path</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">-7</id>
+                <ident>ENG-7</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+</poris>
