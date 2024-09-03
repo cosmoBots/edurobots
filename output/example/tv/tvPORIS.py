@@ -1,11 +1,11 @@
 from PORIS import *
 
-class tvPORIS:
-    def __init__(self):
-        idcounter = 1
+class tvPORIS(PORISDoc):
+    def __init__(self, project_id):
+        super().__init__(project_id)
         self.sysTV = PORISSys("TV")
         self.mdTVMode_UNKNOWN = PORISMode("TVMode_UNKNOWN")
-        self.root = self.sysTV
+        self.setRoot(self.sysTV)
         self.sysEntrada = PORISSys("Entrada")
         self.mdEntradaMode_UNKNOWN = PORISMode("EntradaMode_UNKNOWN")
         self.prAudio = PORISParam("Audio")
@@ -40,224 +40,152 @@ class tvPORIS:
         self.mdTVMode_Engineering = PORISMode("TVMode_Engineering")
         self.mdEntradaMode_Engineering = PORISMode("EntradaMode_Engineering")
         self.mdAntenaMode_Engineering = PORISMode("AntenaMode_Engineering")
-
-        self.sysTV.id = idcounter
-        idcounter += 1
+        self.addNode(self.sysTV)
         self.sysTV.ident = "TV"
         self.sysTV.description = ""
-
-        self.mdTVMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdTVMode_UNKNOWN)
         self.mdTVMode_UNKNOWN.ident = "TVMode_UNKNOWN"
         self.mdTVMode_UNKNOWN.description = ""
         self.sysTV.addMode(self.mdTVMode_UNKNOWN)
-
-        self.sysEntrada.id = idcounter
-        idcounter += 1
+        self.addNode(self.sysEntrada)
         self.sysEntrada.ident = "Entrada"
         self.sysEntrada.description = ""
         self.sysTV.addSubsystem(self.sysEntrada)
-
-        self.mdEntradaMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_UNKNOWN)
         self.mdEntradaMode_UNKNOWN.ident = "EntradaMode_UNKNOWN"
         self.mdEntradaMode_UNKNOWN.description = ""
         self.sysEntrada.addMode(self.mdEntradaMode_UNKNOWN)
-
-        self.prAudio.id = idcounter
-        idcounter += 1
+        self.addNode(self.prAudio)
         self.prAudio.ident = "Audio"
         self.prAudio.description = ""
         self.sysEntrada.addParam(self.prAudio)
-
-        self.vlAudio_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlAudio_UNKNOWN)
         self.vlAudio_UNKNOWN.ident = "Audio_UNKNOWN"
         self.vlAudio_UNKNOWN.description = "Unknown value for Audio"
         self.prAudio.addValue(self.vlAudio_UNKNOWN)
-
-        self.mdAudioMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAudioMode_UNKNOWN)
         self.mdAudioMode_UNKNOWN.ident = "AudioMode_UNKNOWN"
         self.mdAudioMode_UNKNOWN.description = "Unknown mode for Audio"
         self.prAudio.addMode(self.mdAudioMode_UNKNOWN)
         self.mdAudioMode_UNKNOWN.addValue(self.vlAudio_UNKNOWN)
         self.mdEntradaMode_UNKNOWN.addSubMode(self.mdAudioMode_UNKNOWN)
-
-        self.sysAntena.id = idcounter
-        idcounter += 1
+        self.addNode(self.sysAntena)
         self.sysAntena.ident = "Antena"
         self.sysAntena.description = ""
         self.sysTV.addSubsystem(self.sysAntena)
-
-        self.mdAntenaMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAntenaMode_UNKNOWN)
         self.mdAntenaMode_UNKNOWN.ident = "AntenaMode_UNKNOWN"
         self.mdAntenaMode_UNKNOWN.description = ""
         self.sysAntena.addMode(self.mdAntenaMode_UNKNOWN)
-
-        self.prCanal.id = idcounter
-        idcounter += 1
+        self.addNode(self.prCanal)
         self.prCanal.ident = "Canal"
         self.prCanal.description = ""
         self.sysAntena.addParam(self.prCanal)
-
-        self.vlCanal_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlCanal_UNKNOWN)
         self.vlCanal_UNKNOWN.ident = "Canal_UNKNOWN"
         self.vlCanal_UNKNOWN.description = "Unknown value for Canal"
         self.prCanal.addValue(self.vlCanal_UNKNOWN)
-
-        self.mdCanalMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdCanalMode_UNKNOWN)
         self.mdCanalMode_UNKNOWN.ident = "CanalMode_UNKNOWN"
         self.mdCanalMode_UNKNOWN.description = "Unknown mode for Canal"
         self.prCanal.addMode(self.mdCanalMode_UNKNOWN)
         self.mdCanalMode_UNKNOWN.addValue(self.vlCanal_UNKNOWN)
         self.mdAntenaMode_UNKNOWN.addSubMode(self.mdCanalMode_UNKNOWN)
-
-        self.prBanda.id = idcounter
-        idcounter += 1
+        self.addNode(self.prBanda)
         self.prBanda.ident = "Banda"
         self.prBanda.description = ""
         self.sysAntena.addParam(self.prBanda)
-
-        self.vlBanda_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlBanda_UNKNOWN)
         self.vlBanda_UNKNOWN.ident = "Banda_UNKNOWN"
         self.vlBanda_UNKNOWN.description = "Unknown value for Banda"
         self.prBanda.addValue(self.vlBanda_UNKNOWN)
-
-        self.mdBandaMode_UNKNOWN.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdBandaMode_UNKNOWN)
         self.mdBandaMode_UNKNOWN.ident = "BandaMode_UNKNOWN"
         self.mdBandaMode_UNKNOWN.description = "Unknown mode for Banda"
         self.prBanda.addMode(self.mdBandaMode_UNKNOWN)
         self.mdBandaMode_UNKNOWN.addValue(self.vlBanda_UNKNOWN)
         self.mdAntenaMode_UNKNOWN.addSubMode(self.mdBandaMode_UNKNOWN)
-
-        self.mdTVMode_Antena.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdTVMode_Antena)
         self.mdTVMode_Antena.ident = "TVMode_Antena"
         self.mdTVMode_Antena.description = ""
         self.sysTV.addMode(self.mdTVMode_Antena)
-
-        self.mdTVMode_AV.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdTVMode_AV)
         self.mdTVMode_AV.ident = "TVMode_AV"
         self.mdTVMode_AV.description = ""
         self.sysTV.addMode(self.mdTVMode_AV)
-
-        self.mdEntradaMode_HDMI1.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_HDMI1)
         self.mdEntradaMode_HDMI1.ident = "EntradaMode_HDMI1"
         self.mdEntradaMode_HDMI1.description = ""
         self.sysEntrada.addMode(self.mdEntradaMode_HDMI1)
-
-        self.mdEntradaMode_HDMI2.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_HDMI2)
         self.mdEntradaMode_HDMI2.ident = "EntradaMode_HDMI2"
         self.mdEntradaMode_HDMI2.description = ""
         self.sysEntrada.addMode(self.mdEntradaMode_HDMI2)
-
-        self.mdEntradaMode_AUX.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_AUX)
         self.mdEntradaMode_AUX.ident = "EntradaMode_AUX"
         self.mdEntradaMode_AUX.description = ""
         self.sysEntrada.addMode(self.mdEntradaMode_AUX)
-
-        self.mdEntradaMode_VGA.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_VGA)
         self.mdEntradaMode_VGA.ident = "EntradaMode_VGA"
         self.mdEntradaMode_VGA.description = ""
         self.sysEntrada.addMode(self.mdEntradaMode_VGA)
-
-        self.vlAudio_Jack.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlAudio_Jack)
         self.vlAudio_Jack.ident = "Audio_Jack"
         self.vlAudio_Jack.description = ""
         self.prAudio.addValue(self.vlAudio_Jack)
-
-        self.vlAudio_RCA.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlAudio_RCA)
         self.vlAudio_RCA.ident = "Audio_RCA"
         self.vlAudio_RCA.description = ""
         self.prAudio.addValue(self.vlAudio_RCA)
-
-        self.mdAudioMode_Mode.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAudioMode_Mode)
         self.mdAudioMode_Mode.ident = "AudioMode_Mode"
         self.mdAudioMode_Mode.description = ""
         self.prAudio.addMode(self.mdAudioMode_Mode)
-
-        self.vlCanal_Rango_Analogico.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlCanal_Rango_Analogico)
         self.vlCanal_Rango_Analogico.ident = "Canal_Rango_Analogico"
         self.vlCanal_Rango_Analogico.description = ""
         self.prCanal.addValue(self.vlCanal_Rango_Analogico)
-
-        self.mdCanalMode_Digital.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdCanalMode_Digital)
         self.mdCanalMode_Digital.ident = "CanalMode_Digital"
         self.mdCanalMode_Digital.description = ""
         self.prCanal.addMode(self.mdCanalMode_Digital)
-
-        self.mdCanalMode_Analogico.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdCanalMode_Analogico)
         self.mdCanalMode_Analogico.ident = "CanalMode_Analogico"
         self.mdCanalMode_Analogico.description = ""
         self.prCanal.addMode(self.mdCanalMode_Analogico)
-
-        self.vlCanal_Rango_Digital.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlCanal_Rango_Digital)
         self.vlCanal_Rango_Digital.ident = "Canal_Rango_Digital"
         self.vlCanal_Rango_Digital.description = ""
         self.prCanal.addValue(self.vlCanal_Rango_Digital)
-
-        self.vlBanda_UHF.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlBanda_UHF)
         self.vlBanda_UHF.ident = "Banda_UHF"
         self.vlBanda_UHF.description = ""
         self.prBanda.addValue(self.vlBanda_UHF)
-
-        self.vlBanda_VHF.id = idcounter
-        idcounter += 1
+        self.addNode(self.vlBanda_VHF)
         self.vlBanda_VHF.ident = "Banda_VHF"
         self.vlBanda_VHF.description = ""
         self.prBanda.addValue(self.vlBanda_VHF)
-
-        self.mdBandaMode_Analogico.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdBandaMode_Analogico)
         self.mdBandaMode_Analogico.ident = "BandaMode_Analogico"
         self.mdBandaMode_Analogico.description = ""
         self.prBanda.addMode(self.mdBandaMode_Analogico)
-
-        self.mdAntenaMode_Digital.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAntenaMode_Digital)
         self.mdAntenaMode_Digital.ident = "AntenaMode_Digital"
         self.mdAntenaMode_Digital.description = ""
         self.sysAntena.addMode(self.mdAntenaMode_Digital)
-
-        self.mdAntenaMode_Analogico.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAntenaMode_Analogico)
         self.mdAntenaMode_Analogico.ident = "AntenaMode_Analogico"
         self.mdAntenaMode_Analogico.description = ""
         self.sysAntena.addMode(self.mdAntenaMode_Analogico)
-
-        self.mdTVMode_Engineering.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdTVMode_Engineering)
         self.mdTVMode_Engineering.ident = "TVMode_Engineering"
         self.mdTVMode_Engineering.description = "TV engineering mode"
         self.sysTV.addMode(self.mdTVMode_Engineering)
-
-        self.mdEntradaMode_Engineering.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdEntradaMode_Engineering)
         self.mdEntradaMode_Engineering.ident = "EntradaMode_Engineering"
         self.mdEntradaMode_Engineering.description = "Entrada engineering mode"
         self.sysEntrada.addMode(self.mdEntradaMode_Engineering)
-
-        self.mdAntenaMode_Engineering.id = idcounter
-        idcounter += 1
+        self.addNode(self.mdAntenaMode_Engineering)
         self.mdAntenaMode_Engineering.ident = "AntenaMode_Engineering"
         self.mdAntenaMode_Engineering.description = "Antena engineering mode"
         self.sysAntena.addMode(self.mdAntenaMode_Engineering)

@@ -16,14 +16,14 @@ def calculateSpeed(vl):
     return candidate
 
 
-thismodel = missionrobot_physical()
+thismodel = missionrobot_physical(1)
 
-print("Let's test our model ",thismodel.root.getName())
-print("Current robot mode is ",thismodel.root.getSelectedMode().getName())
+print("Let's test our model ",thismodel.getRoot().getName())
+print("Current mode is ",thismodel.getRoot().getSelectedMode().getName())
 print("")
 print("Setting the robot mode as active")
 thismodel.set_MissionRobotMode(thismodel.mdMissionRobotMode_Active)
-print("Current robot mode is ",thismodel.root.getSelectedMode().getName())
+print("Current robot mode is ",thismodel.getRoot().getSelectedMode().getName())
 print("Current fragment is ",thismodel.get_PathMode().getName())
 print("Current sensor decision is ",thismodel.get_DecisionMode().getName())
 print("Current linefollower mode is ",thismodel.get_LineFollowerMode().getName())
