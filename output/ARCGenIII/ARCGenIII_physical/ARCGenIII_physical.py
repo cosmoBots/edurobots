@@ -14,3 +14,7 @@ thismodel = ARCGenIII_physical(1)
 print("Let's test our model ",thismodel.getRoot().getName())
 print("Current mode is ",thismodel.getRoot().getSelectedMode().getName())
 
+dom = thismodel.toXML()
+pretty_xml_as_string = dom.toprettyxml()
+print(pretty_xml_as_string) 
+
