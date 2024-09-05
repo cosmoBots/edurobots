@@ -13,8 +13,13 @@ thismodel = ARCGenIII_physical(1)
 
 print("Let's test our model ",thismodel.getRoot().getName())
 print("Current mode is ",thismodel.getRoot().getSelectedMode().getName())
+print("Current binning value is",thismodel.prBinning.getSelectedValue().getName())
 
-dom = thismodel.toXML()
-pretty_xml_as_string = dom.toprettyxml()
-print(pretty_xml_as_string) 
+thismodel.sysARCGenIII.selectMode(thismodel.mdARCGenIIIMode_Real)
+print("Current mode is ",thismodel.getRoot().getSelectedMode().getName())
+print("After change, Current binning value is",thismodel.prBinning.getSelectedValue().getName())
+
+#dom = thismodel.toXML()
+#pretty_xml_as_string = dom.toprettyxml()
+#print(pretty_xml_as_string) 
 
