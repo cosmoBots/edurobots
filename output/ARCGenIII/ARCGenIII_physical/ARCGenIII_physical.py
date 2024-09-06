@@ -25,3 +25,6 @@ dom = thismodel.toXML()
 pretty_xml_as_string = dom.toprettyxml()
 print(pretty_xml_as_string) 
 
+print("Let's parse")
+othermodel = PORISDoc(2)
+othermodel.fromXML(dom)
