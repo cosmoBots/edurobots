@@ -23,8 +23,13 @@ print("After change, Current binning value is",thismodel.prBinning.getSelectedVa
 
 dom = thismodel.toXML()
 pretty_xml_as_string = dom.toprettyxml()
-print(pretty_xml_as_string) 
+# print(pretty_xml_as_string) 
 
 print("Let's parse")
 othermodel = PORISDoc(2)
 othermodel.fromXML(dom)
+
+print("Let's dump")
+dom2 = othermodel.toXML()
+pretty_xml_as_string = dom2.toprettyxml()
+print(pretty_xml_as_string) 
