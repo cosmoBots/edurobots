@@ -106,7 +106,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">-1</id>
                 <ident>VIRT-1</ident>
             </destination>
@@ -124,7 +124,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">-2</id>
                 <ident>VIRT-2</ident>
             </destination>
@@ -142,7 +142,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -160,7 +160,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -178,7 +178,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -196,7 +196,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -214,7 +214,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -232,7 +232,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -250,7 +250,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -268,7 +268,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
@@ -286,7 +286,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000029</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#0</ident>
             </destination>
@@ -304,7 +304,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000030</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#10</ident>
             </destination>
@@ -322,7 +322,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000031</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/v#-10</ident>
             </destination>
@@ -340,7 +340,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000035</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#0</ident>
             </destination>
@@ -358,7 +358,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000036</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#10</ident>
             </destination>
@@ -376,7 +376,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Value">
+            <destination type="PORISValue">
                 <id type="integer">2000000037</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/v#-10</ident>
             </destination>
@@ -394,11 +394,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000027</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000033</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
@@ -416,11 +416,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000028</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000033</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
@@ -438,11 +438,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000034</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000027</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
@@ -460,11 +460,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000032</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000026</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
@@ -482,11 +482,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000032</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000027</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
@@ -504,11 +504,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000026</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000033</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
@@ -526,27 +526,27 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000026</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000027</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Forward</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000028</id>
                 <ident>mrmob/s#Mobility/p#RightWheelSpeed/m#Back</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000032</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000033</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Forward</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000034</id>
                 <ident>mrmob/s#Mobility/p#LeftWheelSpeed/m#Back</ident>
             </destination>
@@ -564,7 +564,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -582,11 +582,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000039</id>
                 <ident>mrmob/s#Mobility/m#TurnRight</ident>
             </destination>
@@ -604,11 +604,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000040</id>
                 <ident>mrmob/s#Mobility/m#TurnLeft</ident>
             </destination>
@@ -626,7 +626,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -644,11 +644,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000040</id>
                 <ident>mrmob/s#Mobility/m#TurnLeft</ident>
             </destination>
@@ -666,7 +666,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -684,7 +684,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -702,7 +702,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -720,7 +720,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -738,7 +738,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -756,11 +756,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000039</id>
                 <ident>mrmob/s#Mobility/m#TurnRight</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
@@ -778,7 +778,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -796,7 +796,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -814,7 +814,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -832,7 +832,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000038</id>
                 <ident>mrmob/s#Mobility/m#Forward</ident>
             </destination>
@@ -850,7 +850,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
@@ -868,35 +868,35 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000023</id>
                 <ident>mrdecision/s#Decision/m#WWW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000020</id>
                 <ident>mrdecision/s#Decision/m#WWB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000017</id>
                 <ident>mrdecision/s#Decision/m#WBW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000014</id>
                 <ident>mrdecision/s#Decision/m#WBB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000011</id>
                 <ident>mrdecision/s#Decision/m#BWW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000008</id>
                 <ident>mrdecision/s#Decision/m#BWB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000005</id>
                 <ident>mrdecision/s#Decision/m#BBW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000002</id>
                 <ident>mrdecision/s#Decision/m#BBB_01</ident>
             </destination>
@@ -914,35 +914,35 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000024</id>
                 <ident>mrdecision/s#Decision/m#WWW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000021</id>
                 <ident>mrdecision/s#Decision/m#WWB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000018</id>
                 <ident>mrdecision/s#Decision/m#WBW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000015</id>
                 <ident>mrdecision/s#Decision/m#WBB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000012</id>
                 <ident>mrdecision/s#Decision/m#BWW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000009</id>
                 <ident>mrdecision/s#Decision/m#BWB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000006</id>
                 <ident>mrdecision/s#Decision/m#BBW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000003</id>
                 <ident>mrdecision/s#Decision/m#BBB_03</ident>
             </destination>
@@ -960,35 +960,35 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000022</id>
                 <ident>mrdecision/s#Decision/m#WWW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000019</id>
                 <ident>mrdecision/s#Decision/m#WWB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000016</id>
                 <ident>mrdecision/s#Decision/m#WBW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000013</id>
                 <ident>mrdecision/s#Decision/m#WBB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000010</id>
                 <ident>mrdecision/s#Decision/m#BWW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000007</id>
                 <ident>mrdecision/s#Decision/m#BWB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000004</id>
                 <ident>mrdecision/s#Decision/m#BBW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000001</id>
                 <ident>mrdecision/s#Decision/m#BBB_00</ident>
             </destination>
@@ -1006,7 +1006,7 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000053</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
             </destination>
@@ -1024,11 +1024,11 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000051</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000052</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
             </destination>
@@ -1046,39 +1046,39 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000038</id>
                 <ident>mrmob/s#Mobility/m#Forward</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000039</id>
                 <ident>mrmob/s#Mobility/m#TurnRight</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000040</id>
                 <ident>mrmob/s#Mobility/m#TurnLeft</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000041</id>
                 <ident>mrmob/s#Mobility/m#Stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000042</id>
                 <ident>mrmob/s#Mobility/m#SoftLeft</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000043</id>
                 <ident>mrmob/s#Mobility/m#SoftRight</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000047</id>
                 <ident>mrnextstep/s#NextStep/m#Yes</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000049</id>
                 <ident>mrline/s#LineFollower/m#WBW</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">-4</id>
                 <ident>ENG-4</ident>
             </destination>
@@ -1096,103 +1096,103 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000001</id>
                 <ident>mrdecision/s#Decision/m#BBB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000002</id>
                 <ident>mrdecision/s#Decision/m#BBB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000003</id>
                 <ident>mrdecision/s#Decision/m#BBB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000004</id>
                 <ident>mrdecision/s#Decision/m#BBW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000005</id>
                 <ident>mrdecision/s#Decision/m#BBW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000006</id>
                 <ident>mrdecision/s#Decision/m#BBW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000007</id>
                 <ident>mrdecision/s#Decision/m#BWB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000008</id>
                 <ident>mrdecision/s#Decision/m#BWB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000009</id>
                 <ident>mrdecision/s#Decision/m#BWB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000010</id>
                 <ident>mrdecision/s#Decision/m#BWW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000011</id>
                 <ident>mrdecision/s#Decision/m#BWW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000012</id>
                 <ident>mrdecision/s#Decision/m#BWW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000013</id>
                 <ident>mrdecision/s#Decision/m#WBB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000014</id>
                 <ident>mrdecision/s#Decision/m#WBB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000015</id>
                 <ident>mrdecision/s#Decision/m#WBB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000016</id>
                 <ident>mrdecision/s#Decision/m#WBW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000017</id>
                 <ident>mrdecision/s#Decision/m#WBW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000018</id>
                 <ident>mrdecision/s#Decision/m#WBW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000019</id>
                 <ident>mrdecision/s#Decision/m#WWB_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000020</id>
                 <ident>mrdecision/s#Decision/m#WWB_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000021</id>
                 <ident>mrdecision/s#Decision/m#WWB_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000022</id>
                 <ident>mrdecision/s#Decision/m#WWW_00</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000023</id>
                 <ident>mrdecision/s#Decision/m#WWW_01</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000024</id>
                 <ident>mrdecision/s#Decision/m#WWW_03</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">-3</id>
                 <ident>ENG-3</ident>
             </destination>
@@ -1210,19 +1210,19 @@
         <project-id type="integer">13</project-id>
         <type>PORISMode</type>
         <destinations type="array">
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000051</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#01_fragment</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000052</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#03_fragment</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">2000000053</id>
                 <ident>missionrobot/s#MissionRobot/s#Path/m#00_stop</ident>
             </destination>
-            <destination type="Mode">
+            <destination type="PORISMode">
                 <id type="integer">-8</id>
                 <ident>ENG-8</ident>
             </destination>
