@@ -1,0 +1,3 @@
+*.graphml.out
+*.backup
+*.graphml.old

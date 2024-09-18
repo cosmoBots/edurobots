@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poris>
+    <value>
+        <id type="integer">-1</id>
+        <ident>VIRT-1</ident>
+        <name>help</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValue</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value>
+    <value>
+        <id type="integer">-2</id>
+        <ident>VIRT-2</ident>
+        <name>version</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValue</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value>
+    <value-double-range>
+        <id type="integer">2000000007</id>
+        <ident>BD-0062</ident>
+        <name>Range</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValueFloat</type>
+        <value-formatter-id type="integer">5</value-formatter-id>
+        <default-float type="float">60</default-float>
+        <rangemax type="float">127</rangemax>
+        <rangemin type="float">0</rangemin>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value-double-range>
+    <value>
+        <id type="integer">2000000009</id>
+        <ident>BD-0064</ident>
+        <name>9600</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValue</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value>
+    <value>
+        <id type="integer">2000000010</id>
+        <ident>BD-0065</ident>
+        <name>56000</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValue</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value>
+    <value-string>
+        <id type="integer">2000000012</id>
+        <ident>BD-0067</ident>
+        <name>TextValue</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValueString</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <default-string>192.168.1.20</default-string>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value-string>
+    <value-double-range>
+        <id type="integer">2000000014</id>
+        <ident>BD-0069</ident>
+        <name>Range</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValueFloat</type>
+        <value-formatter-id type="integer">5</value-formatter-id>
+        <default-float type="float">3001</default-float>
+        <rangemax type="float">65534</rangemax>
+        <rangemin type="float">3001</rangemin>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value-double-range>
+    <value-double-range>
+        <id type="integer">905</id>
+        <ident>BD-0079</ident>
+        <name>Range</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValueFloat</type>
+        <value-formatter-id type="integer">5</value-formatter-id>
+        <default-float type="float">3001</default-float>
+        <rangemax type="float">65534</rangemax>
+        <rangemin type="float">3001</rangemin>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value-double-range>
+    <value-string>
+        <id type="integer">2000000017</id>
+        <ident>BD-0071</ident>
+        <name>TextValue</name>
+        <node-type-id type="integer">5</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISValueString</type>
+        <value-formatter-id type="integer" nil="true"/>
+        <default-string>COM1</default-string>
+        <destinations type="array"/>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </value-string>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000001</id>
+        <ident>BD-0056</ident>
+        <name>help</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">-1</id>
+                <ident>VIRT-1</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000002</id>
+        <ident>BD-0057</ident>
+        <name>version</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">-2</id>
+                <ident>VIRT-2</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000006</id>
+        <ident>BD-0061</ident>
+        <name>ident</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">2000000007</id>
+                <ident>BD-0062</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000008</id>
+        <ident>BD-0063</ident>
+        <name>Mode</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">2000000009</id>
+                <ident>BD-0064</ident>
+            </destination>
+            <destination type="PORISValue">
+                <id type="integer">2000000010</id>
+                <ident>BD-0065</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000011</id>
+        <ident>BD-0066</ident>
+        <name>ip</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">2000000012</id>
+                <ident>BD-0067</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000013</id>
+        <ident>BD-0068</ident>
+        <name>ident</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">2000000014</id>
+                <ident>BD-0069</ident>
+            </destination>
+            <destination type="PORISValue">
+                <id type="integer">905</id>
+                <ident>BD-0079</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000016</id>
+        <ident>BD-0070</ident>
+        <name>ip</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">2000000017</id>
+                <ident>BD-0071</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">-4</id>
+        <ident>ENG-4</ident>
+        <name>Engineering</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000006</id>
+                <ident>BD-0061</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000008</id>
+                <ident>BD-0063</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000011</id>
+                <ident>BD-0066</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000013</id>
+                <ident>BD-0068</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000016</id>
+                <ident>BD-0070</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000004</id>
+        <ident>BD-0059</ident>
+        <name>udp</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000011</id>
+                <ident>BD-0066</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000013</id>
+                <ident>BD-0068</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000005</id>
+        <ident>BD-0060</ident>
+        <name>serial</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000008</id>
+                <ident>BD-0063</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000006</id>
+                <ident>BD-0061</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000016</id>
+                <ident>BD-0070</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">-3</id>
+        <ident>ENG-3</ident>
+        <name>Engineering</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000004</id>
+                <ident>BD-0059</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000005</id>
+                <ident>BD-0060</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">-4</id>
+                <ident>ENG-4</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <mode>
+        <default-mode-id type="integer" nil="true"/>
+        <default-value-id type="integer" nil="true"/>
+        <id type="integer">2000000003</id>
+        <ident>BD-0058</ident>
+        <name>connect</name>
+        <node-type-id type="integer">6</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISMode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000004</id>
+                <ident>BD-0059</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000005</id>
+                <ident>BD-0060</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </mode>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">900</id>
+        <ident>BD-0074</ident>
+        <name>address</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000006</id>
+                <ident>BD-0061</ident>
+            </destination>
+            <destination type="PORISValueFloat">
+                <id type="integer">2000000007</id>
+                <ident>BD-0062</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">901</id>
+        <ident>BD-0075</ident>
+        <name>bauds</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000008</id>
+                <ident>BD-0063</ident>
+            </destination>
+            <destination type="PORISValue">
+                <id type="integer">2000000009</id>
+                <ident>BD-0064</ident>
+            </destination>
+            <destination type="PORISValue">
+                <id type="integer">2000000010</id>
+                <ident>BD-0065</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">902</id>
+        <ident>BD-0076</ident>
+        <name>address_ip</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000011</id>
+                <ident>BD-0066</ident>
+            </destination>
+            <destination type="PORISValueString">
+                <id type="integer">2000000012</id>
+                <ident>BD-0067</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">903</id>
+        <ident>BD-0077</ident>
+        <name>port_ip</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000013</id>
+                <ident>BD-0068</ident>
+            </destination>
+            <destination type="PORISValueFloat">
+                <id type="integer">2000000014</id>
+                <ident>BD-0069</ident>
+            </destination>
+            <destination type="PORISValueFloat">
+                <id type="integer">905</id>
+                <ident>BD-0079</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">904</id>
+        <ident>BD-0078</ident>
+        <name>port</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000016</id>
+                <ident>BD-0070</ident>
+            </destination>
+            <destination type="PORISValueString">
+                <id type="integer">2000000017</id>
+                <ident>BD-0071</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">899</id>
+        <ident>BD-0073</ident>
+        <name>protocol</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISMode">
+                <id type="integer">2000000004</id>
+                <ident>BD-0059</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000005</id>
+                <ident>BD-0060</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">900</id>
+                <ident>BD-0074</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">901</id>
+                <ident>BD-0075</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">902</id>
+                <ident>BD-0076</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">903</id>
+                <ident>BD-0077</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">904</id>
+                <ident>BD-0078</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">-4</id>
+                <ident>ENG-4</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+    <sub-system>
+        <default-mode-id type="integer" nil="true"/>
+        <id type="integer">898</id>
+        <ident>BD-0072</ident>
+        <name>device_connect</name>
+        <node-type-id type="integer">4</node-type-id>
+        <project-id type="integer">13</project-id>
+        <type>PORISNode</type>
+        <destinations type="array">
+            <destination type="PORISValue">
+                <id type="integer">-1</id>
+                <ident>VIRT-1</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000001</id>
+                <ident>BD-0056</ident>
+            </destination>
+            <destination type="PORISValue">
+                <id type="integer">-2</id>
+                <ident>VIRT-2</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000002</id>
+                <ident>BD-0057</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">2000000003</id>
+                <ident>BD-0058</ident>
+            </destination>
+            <destination type="PORISNode">
+                <id type="integer">899</id>
+                <ident>BD-0073</ident>
+            </destination>
+            <destination type="PORISMode">
+                <id type="integer">-3</id>
+                <ident>ENG-3</ident>
+            </destination>
+        </destinations>
+        <node-attributes type="array"/>
+        <labels type="array"/>
+    </sub-system>
+</poris>
