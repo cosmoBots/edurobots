@@ -78,6 +78,12 @@ without its extension. OSIRIS generates `output/py/osiris/osi/osiPORIS.py`
 and `output/xml/osiris/osi.xml`. To create a descriptor for a new directory
 model, use `pyPORIS/porispanel_dir.sh --cluster <name> <directory>`.
 
+The missionrobot cluster is named `mr`, with `missionrobot` as its root diagram.
+It generates `output/py/missionrobot/mr/mrPORIS.py` and
+`output/xml/missionrobot/mr.xml`, keeping the composed model's products separate
+from those of the individual `missionrobot/missionrobot` diagram. Use a cluster
+name different from the diagram names to avoid XML and ODS filename collisions.
+
 Numeric range labels accept both `minimum < default < maximum` and
 `minimum ≤ default ≤ maximum`. Both forms describe inclusive bounds. The
 educational models use `<` for easier typing; this is a separator in the
