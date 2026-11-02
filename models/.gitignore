@@ -1,3 +1,8 @@
 *.graphml.out
 *.backup
 *.graphml.old
+*.out
+*.ods
+*.xml
+*PORIS.py
+secret/

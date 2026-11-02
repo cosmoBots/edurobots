@@ -5,3 +5,6 @@ inverse_aliases.json
 node_aliases.json
 normalized_dict.json
 secret/
+/output/
+.venv/
+venv/
