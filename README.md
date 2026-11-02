@@ -1,115 +1,107 @@
-# pyPORIS_user
+# edurobots
 
-An example of how to use pyPORIS to model your own instruments
+Educational PORIS models based on
+[pyPORIS_user](https://github.com/cosmoBots/pyPORIS_user), with the
+[pyPORIS](https://github.com/cosmoBots/pyPORIS) toolchain as a submodule.
 
-The purpose of this repo is provide an starting point to fork, so every user can have her/his own modeling environment with her/his own models under control system.
-The repo uses the pyPORIS toolchain (https://github.com/cosmoBots/pyPORIS) which is obtained as a submodule.
-The toolchain commands (files with *.sh) are just copied from the pyPORIS ones and adapted to the new models location.
+## Setup
 
-The models are located in the models folder.  You can find there some examples which you can delete once you've validated your toolchain.
+Run the following commands from the repository root:
 
-
-## Requirements
-
-- Java (which can support Java Swing panels)
-- Python 3
-
-Install python libraries:
-
-- bs4 (< 4.13, because this version breaks the parser)
-- lxml
-- pyexcel_ods
-- python-redmine
-
-We have added requirements.txt and constraints.txt for taking care of the dependencies which could break the functionality.
-
-If you want to install a venv with the strict requirements, you can do:
-
-```
-python -m venv venv
-source venv/bin/activate
-pip install --no-cache-dir -r requirements.txt
+```bash
+git submodule update --init --recursive
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-If you want to use newest pip libraries but respecting the constraints:
+Python 3 is required for generation. Java is needed to open the default Swing
+configuration panel. The optional web viewer uses Node.js and npm; see the
+toolchain README for its setup.
 
+## Models and generated products
+
+GraphML source models live under `models/`. The toolchain generates Python
+classes from GraphML, then exports XML from the Python model. ODS generation
+is optional.
+
+```text
+models/       GraphML sources and cluster.yaml descriptors
+output/py/    generated Python classes and physical companions
+output/xml/   generated configuration panel XML
+output/ods/   optional generated spreadsheets
 ```
-python -m venv venv
-source venv/bin/activate
-pip install -c constraints.txt bs4 lxml pyexcel_ods python-redmine
+
+Generated products are ignored by Git. Legacy XML, ODS, `.out` files and
+generated Python classes alongside the source models have been removed;
+regenerate them with the current toolchain when needed.
+
+Physical companions may contain handwritten behavior. Keep that code outside
+the ignored output tree if it needs to be versioned, and preserve local edits
+before deleting generated directories.
+
+## Generate and explore a model
+
+Use the path relative to `models/`, without the `.graphml` extension:
+
+```bash
+pyPORIS/porispanel.sh example/example
 ```
 
-This is an example of how to install a valid Java platform in a modern Linux machine:
+Useful options:
 
+```bash
+pyPORIS/porispanel.sh --no-panel example/example  # generate without opening a panel
+pyPORIS/porispanel.sh --ods example/example       # also generate a spreadsheet
+pyPORIS/porispanel.sh --web example/example       # open the optional web viewer
 ```
-sudo apt install openjdk-17-jdk
+
+The default viewer is the Java Swing panel. `--web` selects the browser viewer.
+Neither viewer is required when using `--no-panel`.
+
+For a model split across several GraphML diagrams, use the directory wrapper:
+
+```bash
+pyPORIS/porispanel_dir.sh osiris
+pyPORIS/porispanel_dir.sh missionrobot
 ```
 
-## Forking
+Each directory model needs a `cluster.yaml` descriptor. OSIRIS uses:
 
-Just go to Github https://github.com/cosmoBots/pyPORIS_user and press the fork button.  Set the new path, let's say you create the fork in https://github.com/myname/myporismodels
+```yaml
+cluster: osi
+root: osiris
+```
 
-Then copy the clone link for the new forked repository and execute the typical clone action, something like this:
+`cluster` names the generated model; `root` identifies the root GraphML file
+without its extension. OSIRIS generates `output/py/osiris/osi/osiPORIS.py`
+and `output/xml/osiris/osi.xml`. To create a descriptor for a new directory
+model, use `pyPORIS/porispanel_dir.sh --cluster <name> <directory>`.
 
-    git clone git@github.com:myname/myporismodels.git
+Numeric range labels accept both `minimum < default < maximum` and
+`minimum ≤ default ≤ maximum`. Both forms describe inclusive bounds. The
+educational models use `<` for easier typing; this is a separator in the
+diagram notation, not a strict inequality.
 
-Then you can enter the cloned repository folder:
+## Private models
 
-    cd myporismodels
+Keep private models under `models/secret/`, for example
+`models/secret/tanknet.graphml`, and invoke them as `secret/tanknet`.
+Directories named `secret` are ignored at any depth, including the generated
+Python, XML and ODS product paths. Do not force-add private files to Git.
 
-## Preparation after forking
+## Updating the toolchain
 
-Execute:
+The repository pins a specific pyPORIS commit. To update it to `main`:
 
-    git submodule update --init --recursive
+```bash
+git -C pyPORIS fetch origin
+git -C pyPORIS switch main
+git -C pyPORIS merge --ff-only origin/main
+git add pyPORIS
+git commit -m "chore(deps): update pyPORIS"
+```
 
-It will populate pyPORIS folder and the AstroPorisPlayer binaries.  pyPORIS contains the PORIS toolkit toolchain to parse models in GraphML diagrams and convert them to ODS and XML files, and to create a Python class from the model, and AstroPorisPlayer allows you to interactively play with a configuration panel (using Java Swing technology) so you can check your model fits your expectations.
-
-## Using the toolchain
-
-This repo has been done so you can execute some of the features pyPORIS provides.  Not all the features provided from pyPORIS have been translated to this repository.  Please check https://github.com/cosmoBots/pyPORIS/blob/main/README.md for details.
-
-The features currently added are:
-
-- porispanel.sh Creates a PORIS representation in ODS and XML format from a PORIS diagram in GraphML, and launches a configuration panel to validate the model.
-- porispanel_csys.sh Adds to porispanel.sh the synchronization with a cosmoSys instance.
-- redoPorisPython.sh and doPorisPython.sh converts an ODS representation of a PORIS model into convenient Python classes.
-
-The toolchain commands have been adapted to have the same behaviour of the pyPORIS ones, but acting on ./models and ./output folders of this repo instead of acting on ./pyPORIS/models or ./pyPORIS/output
-
-Apart from this transparent adaptation, the syntax is the same.
-
-## Updating the toolchain as time passes
-
-The pyPORIS submodule is cloned and initialized from an specific commit entry, identified by a hash.  If you would like to update the submodule to point to another commit entry you should update it manually.  Let's say you want to update to a new commit entry 9343abf...
-
-    cd pyPORIS
-    git fetch --all
-    git checkout -b 9343abf
-    git pull
-    cd ..
-    git commit pyPORIS
-    git commit -m "Updated to a different pyPORIS version"
-
-If you want to prepare your local copy to be regularly updating it to use latest pyPORIS version in the main branch:
-
-    cd pyPORIS
-    git fetch --all
-    git checkout -b main
-    git pull
-    cd ..
-    git commit pyPORIS
-    git commit -m "Updated to the latest commit in main branch of pyPORIS"
-
-and then, regularly update your pyPORIS using the following sentence.
-
-    git submodule update --init --recursive
-
-Take into account that pyPORIS might be changing the syntaxes or the procedures, so you will be responsible of keeping your *.sh or *.bat files compatible with the version of pyPORIS you are using.
-
-HINT: From time to time we at cosmoBots.eu update the repository you initially forked from.  You can check the changes occurred in it to have an idea of the adaptations needed to support newer versions of pyPORIS
-
-## Conclusion
-Happy modeling!
-
-cosmoBots.eu
+Review local submodule changes before updating. Generated products can be
+regenerated from the source models after the update. See `pyPORIS/README.md`
+for additional commands and cosmoSys synchronization setup.
