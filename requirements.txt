@@ -9,6 +9,7 @@ odfpy==1.4.1
 pyexcel-io==0.6.7
 pyexcel-ods==0.6.0
 python-redmine==2.5.0
+pytz
 requests==2.32.5
 soupsieve==2.8
 typing_extensions==4.15.0
